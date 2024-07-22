@@ -1,0 +1,86 @@
+.innerCutter {
+    /* position: absolute; */
+    z-index: 1;
+    top: 201px;
+    max-width: 572px;
+    width: 45%;
+    height: auto;
+    border-radius: 16px;
+    /* padding: 40px; */
+}
+
+.watchAVideo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.buttonsInWhoWeAre{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cutter{
+    display: none;
+    /* position: absolute; */
+    z-index:2;
+    top: 200px;
+    width: 25.2%;
+    height: auto;
+}
+.outer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 100px;
+    padding: 40px;
+}
+span{
+    color:#CE7C02;
+}
+li{
+    list-style-type: none;
+}
+.whoWeAreHead{
+    color:#145C08;
+}
+.whoWeAreContainer {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+button {
+    font-size: 24px;
+    width: auto;
+    border: 0px;
+    border-radius: 16px;
+    background-color: #CE7C02;
+    color: #fff;
+    padding:10px;
+}
+@media (width<1000px) {
+
+    .outer{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+
+    
+}
+.innerCutter {
+    width:65%;
+}
+.whoWeAreContainer {
+   
+    width: 65%;
+    /* gap: 40px; */
+   
+}
+}
