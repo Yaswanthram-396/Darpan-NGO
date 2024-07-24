@@ -23,66 +23,6 @@ const volunteerDonatePartner = [
     buttonText: "Partner with us",
   },
 ];
-// import React from "react";
-
-// const MoveWithUs = () => {
-//   const innerValue = {
-//     background: "partnerWithUs.png", // Replace with your image URL
-//   };
-
-//   const containerStyle = {
-//     position: "relative",
-//     width: "300px", // Adjust the width as needed
-//     height: "400px", // Adjust the height as needed
-//     backgroundImage: `url(${innerValue.background})`,
-//     backgroundSize: "cover", // Cover the entire container
-//     backgroundPosition: "center", // Center the image
-//     borderRadius: "10px", // Optional: add border-radius for rounded corners
-//     overflow: "hidden", // Ensure the overlay fits within the container
-//   };
-
-//   const overlayStyle = {
-//     position: "absolute",
-//     top: 0,
-//     left: 0,
-//     width: "100%",
-//     height: "100%",
-//     backgroundColor: "rgba(0, 0, 0, 0.6)", // Semi-transparent black overlay
-//     display: "flex",
-//     flexDirection: "column",
-//     alignItems: "center",
-//     justifyContent: "center",
-//     color: "white", // Ensure the text is readable
-//     padding: "20px",
-//     textAlign: "center",
-//   };
-
-//   const buttonStyle = {
-//     backgroundColor: "#ff9900", // Button background color
-//     border: "none",
-//     color: "white",
-//     padding: "10px 20px",
-//     textAlign: "center",
-//     textDecoration: "none",
-//     display: "inline-block",
-//     fontSize: "16px",
-//     margin: "10px 0",
-//     cursor: "pointer",
-//     borderRadius: "5px",
-//   };
-
-//   return (
-//     <div style={containerStyle}>
-//       <div style={overlayStyle}>
-//         <h2>Be Part of Something Big</h2>
-//         <p>Lorem ipsum dolor sit amet consectetur. Eu aliquet ultrices nunc.</p>
-//         <button style={buttonStyle}>Volunteer</button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default MoveWithUs;
 
 function MoveWithUs() {
   return (
