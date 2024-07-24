@@ -85,45 +85,24 @@ const volunteerDonatePartner = [
 // export default MoveWithUs;
 
 function MoveWithUs() {
-  const overlayStyle = {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "400px",
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-    justifyContent: "flex-start",
-    color: "white",
-    padding: "20px",
-    textAlign: "left",
-  };
-
   return (
     <>
-      {" "}
       <div className="MoveWithUsdiv">
         {volunteerDonatePartner.map((innerValue) => {
           const containerStyle = {
-            position: "relative",
-            width: "400px", // Adjust the width as needed
-            height: "365px", // Adjust the height as needed
+            height: "400px",
             backgroundImage: `url(${innerValue.background})`,
-            backgroundSize: "cover", // Cover the entire container
-            backgroundPosition: "center", // Center the image
-            borderRadius: "10px", // Optional: add border-radius for rounded corners
-            overflow: "hidden", // Ensure the overlay fits within the container
-            filter: "brightness(70%)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            borderRadius: "10px",
+            overflow: "hidden",
           };
 
           return (
             <>
-              <div
-                style={containerStyle}
-                //   className="moveWithUs"
-              >
-                <div style={overlayStyle}>
+              <div className="parent">
+                <div style={containerStyle} className="background"></div>
+                <div className="child">
                   <h1>{innerValue.heading}</h1>
                   <p>{innerValue.paragraph}</p>
                   <button>{innerValue.buttonText}</button>

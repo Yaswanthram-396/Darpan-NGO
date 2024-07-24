@@ -3,6 +3,7 @@ import Whoweare from "./component/WhoWeAre/Whoweare";
 import CreateOurImpact from "./component/ourImpact/ourImpact";
 import Testimonials from "./component/Testimonials/testimonials";
 import MoveWithUs from "./component/moveWithUs/moveWithUs";
+import OurGllery from "./component/OurGallery/ourGallery";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <CreateOurImpact />
       <Testimonials />
       <MoveWithUs />
+      <OurGllery />
     </div>
   );
 }

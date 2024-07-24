@@ -38,11 +38,14 @@
       @media (min-width: 380px) and (max-width: 400px) {
         height:120vh;
     }
-    @media (min-width: 401px) and (max-width: 600px) {
-        height:133vh;
+    @media (min-width: 401px) and (max-width: 500px) {
+        height:113vh;
+    }
+    @media (min-width: 501px) and (max-width: 600px) {
+        height:103vh;
     }
     @media (min-width: 601px) and (max-width: 899px) {
-        height:100vh;
+        height:82vh;
     }
 
 }

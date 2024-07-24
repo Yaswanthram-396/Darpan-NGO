@@ -34,23 +34,27 @@ function Testimonials() {
           <img className="Ellipse-3" src="Ellipse-Yellow.png" alt="reload" />
           <img className="Ellipse-4" src="Ellipse-Green.png" alt="reload" />
         </div>
-        <div className="cardsAsTestimonials">
-          {TestimonialsArray.map((eachPerson) => {
-            return (
-              <>
-                <div className={eachPerson.class}>
-                  <img
-                    src="Rectangle 411.png"
-                    alt="Reload, <%= eachPerson.name %>!"
-                  />
-                  <h2>{eachPerson.name}</h2> <p>{eachPerson.role}</p>
-                  <p>{eachPerson.about}</p>
-                </div>
-              </>
-            );
-          })}
+        <div class="ghbj">
+          <div className="cardsAsTestimonials">
+            {TestimonialsArray.map((eachPerson) => {
+              return (
+                <>
+                  <div className={eachPerson.class}>
+                    <img
+                      src="Rectangle 411.png"
+                      alt="Reload, <%= eachPerson.name %>!"
+                    />
+                    <h2>{eachPerson.name}</h2> <p>{eachPerson.role}</p>
+                    <p>{eachPerson.about}</p>
+                  </div>
+                </>
+              );
+            })}
+          </div>
+          <div>
+            <button>View All Team</button>
+          </div>
         </div>
-        <button>View All Team</button>
       </div>
     </>
   );
