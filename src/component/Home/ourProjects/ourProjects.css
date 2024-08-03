@@ -1,0 +1,77 @@
+.Line-1,.Line-2,.Line-3{
+    height:75%;
+}
+.line-3-div{
+    display: inline;
+}
+@media (min-width:940px) and (max-width:1242px) {
+    .line-3-div{
+        display: none;
+    }
+    
+}
+@media (max-width:940px) {
+    .line-2-div{
+        display: none;
+    }
+    
+}
+@media (max-width:622px) {
+    .line-1-div,.line-2-div,.line-3-div{
+        display: none;
+    }
+    .pageCards img{
+        width: 72%;
+    }
+   
+    
+}
+.pageCards h1 {
+    margin: 8vh 0px;
+}
+
+.padding-card{
+    padding-top: 10px;
+    margin-top: 0%;
+}
+.card-align {
+    display: flex;
+    flex-flow: row wrap;
+    /* align-items: baseline; */
+    justify-content: space-around;
+}
+.ourproject-card {
+    text-align: center;}
+
+    .box {
+        text-align: center;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+    }
+.ourproject-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+/* .ourproject-card p { */
+   
+/* } */
+.ourproject-card p {
+    text-align: center;
+    width: 14vw;
+    @media  (max-width: 900px) {
+        width: auto;
+        padding: 10px 0px;
+        
+    }
+}
+.ourproject-paragraph {
+    margin-top: 16px;
+}
+.ourproject-heading {
+    margin-top: 16px;
+}
+

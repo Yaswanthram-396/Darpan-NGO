@@ -1,0 +1,182 @@
+.innerCutter {
+    /* position: absolute; */
+    
+    top: 201px;
+    max-width: 572px;
+    width: 24%;
+    height: auto;
+    border-radius: 16px;
+    filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.5));
+
+    /* padding: 40px; */
+}
+
+.watchAVideo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @media (max-width:500px) {
+        justify-content: center;
+    }
+}
+
+.buttonsInWhoWeAre{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: space-between;
+    @media (max-width:500px) {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
+
+.cutter{
+    display: none;
+    /* position: absolute; */
+    z-index:2;
+    top: 200px;
+    width: 25.2%;
+    height: auto;
+}
+.outer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4vh;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: auto;
+    /* gap: 100px; */
+    padding: 40px;
+}
+span{
+    color:#CE7C02;
+}
+li{
+    list-style-type: none;
+}
+.whoWeAreHead{
+    color:#145C08;
+}
+.whoWeAreContainer {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 40px;
+    padding-left: 10px;
+    margin-top: 32px;
+}
+@media (max-width:700px) {
+    .whoWeAreContainer {
+    width:75%;
+    }
+    .innerCutter {
+        width:72%;
+    }
+}
+button {
+    font-size: 24px;
+    width: auto;
+    border: 0px;
+    border-radius: 16px;
+    background-color: #CE7C02;
+    color: #fff;
+    padding:10px;
+}
+@media (width<1000px) {
+
+    .outer{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+
+    
+}
+
+}
+@media (min-width:701px) and (max-width:999px) {
+    .whoWeAreContainer {
+   
+        width: 65%;
+        
+       
+    }
+    .innerCutter {
+        width:65%;
+    }
+    
+    
+}
+.video-button {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+.watchAVideo p{
+    margin:0px;
+    
+}
+.watchAVideo a{
+    color: #202d33;
+    text-decoration: none;
+}
+.watchAVideo{
+    cursor: pointer;
+}
+.whoWeAreContainer button{
+    padding: 10px 20px;
+    border-radius: 24px;
+}
+/* videoModal.css */
+/* videoModal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
