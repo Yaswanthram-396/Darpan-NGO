@@ -1,4 +1,5 @@
 // import Card from "./ourProjectCards/cards";
+import { Link } from "react-router-dom";
 import "./ourProjects.css";
 
 // const cards = [
@@ -86,14 +87,16 @@ const PageCards = () => {
             </div>
 
             <div className="card-align">
-              <div className="ourproject-card">
-                <img src="Education.svg" alt="Reload" />
-                <h2 className="ourproject-heading">Education</h2>
-                <p className="ourproject-paragraph">
-                  Our goal is to make sure everyone has a chance to learn, no
-                  matter where they come from.
-                </p>
-              </div>
+              <Link to="/Education">
+                <div className="ourproject-card">
+                  <img src="Education.svg" alt="Reload" />
+                  <h2 className="ourproject-heading">Education</h2>
+                  <p className="ourproject-paragraph">
+                    Our goal is to make sure everyone has a chance to learn, no
+                    matter where they come from.
+                  </p>
+                </div>
+              </Link>
               <div className="line-1-div">
                 {" "}
                 <img src="Line.svg" alt="Reload" className="Line-1"></img>
@@ -109,14 +112,16 @@ const PageCards = () => {
                 {" "}
                 <img src="Line.svg" alt="Reload" className="Line-2"></img>
               </div>
-              <div className="ourproject-card">
-                <img src="H-and-F-welfare.svg" alt="Reload" />
-                <h2>Health and Family Welfare</h2>
-                <p>
-                  Ensuring essential healthcare for all, especially in rural and
-                  underserved areas.
-                </p>
-              </div>
+              <Link to="/Health&Familypage">
+                <div className="ourproject-card">
+                  <img src="H-and-F-welfare.svg" alt="Reload" />
+                  <h2>Health and Family Welfare</h2>
+                  <p>
+                    Ensuring essential healthcare for all, especially in rural
+                    and underserved areas.
+                  </p>
+                </div>
+              </Link>
               <div className="line-3-div">
                 {" "}
                 <img src="Line.svg" alt="Reload" className="Line-3"></img>

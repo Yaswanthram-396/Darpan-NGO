@@ -6,7 +6,6 @@ import MoveWithUs from "./moveWithUs/moveWithUs";
 import OurGallery from "./OurGallery/ourGallery";
 import CarouselPage from "./coursel/coursel";
 // import HealthAndfamily from "../Health&familypage";
-import Navbar from "./Navbar/Navbar";
 
 // import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -15,7 +14,6 @@ import "./index.css";
 function Home() {
   return (
     <div className="App">
-      <Navbar />
       {/* <HealthAndfamily /> */}
       <CarouselPage />
       <PageCards />

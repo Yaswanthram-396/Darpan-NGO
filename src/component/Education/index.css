@@ -1,0 +1,110 @@
+.EducationPage {
+    position: relative;
+    top: 13vh;
+    display: flex;
+    justify-content: center;
+}
+.EducationOurProject {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.EducationOurProject h4 {
+    margin: 0px;
+}
+.innerContentOfEducationPage {
+    width: 85%;
+}
+
+.Health\&FamilyWelfare {
+    margin-left: 6%;
+    padding-top: 24px;
+}
+/* EducationForAll.css */
+.program-title {
+  /* font-size: 1.25rem; */
+  font-weight: 450;
+  /* margin-bottom: 8px; */
+}
+.container {
+  max-width: 1024px;
+  /* margin: 0 auto; */
+  padding: 24px;
+  background-color: white;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
+  margin-left: 11%;
+  padding-left: 0px;
+}
+  
+  /* .heading-main { */
+    /* font-size: 2rem; 
+    font-weight: bold; 
+    text-align: center;  
+    margin-bottom: 32px;  */
+  /* } */
+  
+  /* .paragraph-intro { */
+    /* font-size: 1.125rem; text-lg */ 
+    /* text-align: center; text-center */
+    /* margin-bottom: 32px; /* mb-8 */
+  /* } */
+  
+  /* .heading-sub {
+    font-size: 1.5rem; /* text-2xl */
+    /* font-weight: 600; /* font-semibold */
+    /* text-align: center; text-center */
+    /* margin-bottom: 24px; mb-6 */ 
+  /* }  */
+  
+  .program-list {
+    margin-top: 8px; /* mt-8 */
+  }
+  
+  .program-item {
+    display: flex; /* flex */
+    align-items: flex-start; /* items-start */
+    margin-bottom: 8px; /* mb-8 */
+  }
+  .container p {
+    margin: 0px;
+    line-height: 24px;
+}
+  .program-icon {
+    flex-shrink: 0; /* flex-shrink-0 */
+    width: 2rem; /* w-8 */
+    height: 2rem; /* h-8 */
+  }
+  
+  /* .program-content {
+    margin-left: 16px; /* space-x-4 */
+  /* }  */
+  
+  .educationImg {
+    filter: brightness(1) grayscale(0.5);
+    width: 95%;
+    height: 40vh;
+    padding: 10px 0px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px;
+}
+.educationImg:hover {
+    filter: brightness(1) grayscale(0);
+}
+.EducationPage li{
+  list-style-type: "-  ";
+}
+  
+  .program-details {
+    list-style-type: disc; /* list-disc */
+    padding-left: 30px; /* list-inside */
+    margin-top: 8px; /* space-y-1 */
+  }
+  .toOverRideMargin{
+    padding-left: 16px;
+  }
+  .overRidePositioning{
+    margin-top: 16vh !important;
+  }
