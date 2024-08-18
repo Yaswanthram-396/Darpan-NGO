@@ -1,9 +1,6 @@
 import "./index.css";
 import ImpactOfHandF from "./impactOnH&F/impactOnH&F";
 import donateImage from "../images/Donate.svg";
-// import childrenImage from "../images/Project.png";
-// import dean from "../images/Project(1).png";
-// import different from "../images/Project(2).png";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -30,7 +27,7 @@ const volunteerDonatePartner = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
     background: "JHHDCTVUY.svg",
     buttonText: "Learn more",
-    link: "/Tribal-effairs",
+    link: "/TribalCommunities",
   },
 ];
 
@@ -63,8 +60,6 @@ export function ReDirect({ arrayOfElements }) {
     </div>
   );
 }
-
-// export default ReDirect;
 
 export function InnerBanner({ image, heading }) {
   const divStyle = {

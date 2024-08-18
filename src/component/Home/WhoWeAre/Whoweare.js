@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./whoweare.css";
 import PropTypes from "prop-types";
 
@@ -77,17 +78,11 @@ function Whoweare() {
                 welfare, tribal affairs, and skill development.
               </p>
             </li>
-            {/* <li>
-              <p>
-                We commit ourself to helping families in the poor communities,
-                the marginalized and underprivileged to improve their lives and
-                achieve lasting victory against poverty.
-              </p>
-            </li> */}
-            {/* </ul> */}
           </div>
           <div className="buttonsInWhoWeAre">
-            <button>Know More</button>
+            <Link to="/WhoWeAre" className="linked">
+              <button>Know More</button>
+            </Link>
             <div className="watchAVideo">
               <div className="App">
                 <a

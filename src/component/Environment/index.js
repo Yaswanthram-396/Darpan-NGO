@@ -5,12 +5,12 @@ import donateImage from "../images/Donate.svg";
 import "./index.css";
 const volunteerDonatePartner = [
   {
-    heading: "Environment",
+    heading: "Education",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
     background: "Project.png",
     buttonText: "Learn more",
-    link: "/Environment",
+    link: "/Education",
   },
   {
     heading: "Health and Family Welfare",
@@ -30,30 +30,30 @@ const volunteerDonatePartner = [
   },
 ];
 
-function EducationPage() {
+function EnvironmentPage() {
   const programs = [
     {
-      title: "Run programs to teach children and adults",
+      title: "Planting Trees",
       details: [
-        "We set up classes in areas where schools are hard to reach",
-        "Our teachers help students with reading, writing, and math",
-        "We also offer adult education classes in the evenings",
+        "We organize big tree-planting events in cities and villages",
+        " Our team teaches people how to care for young trees",
+        "We focus on planting local trees that help wildlife",
       ],
     },
     {
-      title: "Give out books and school supplies",
+      title: "Teaching About Nature",
       details: [
-        "We provide free textbooks to students who can't afford them",
-        "We hand out notebooks, pens, and other basic school items",
-        "Our mobile library brings books to remote areas",
+        "We visit schools to talk about why forests are important",
+        "Our team makes fun posters and videos about saving the environment",
+        "We show people easy ways to live that are good for nature",
       ],
     },
     {
-      title: "Offer money to help bright students continue their studies",
+      title: "Cleaning Up",
       details: [
-        "We give scholarships to students who do well in school",
-        "This money helps pay for school fees, uniforms, and supplies",
-        "We support students from elementary school through college",
+        "We lead community clean-up days in parks and forests",
+        "Our volunteers pick up trash from beaches and rivers",
+        "We teach people how to reduce waste in their daily lives",
       ],
     },
   ];
@@ -67,13 +67,15 @@ function EducationPage() {
           </div>
 
           <div className="Health&FamilyHeading">
-            <h1 className="Health&FamilyWelfare">Education</h1>
+            <div className="Health&FamilyWelfare">
+              <h1>Protecting Our Environment: </h1>
+              <h1>Our Mission for a Greener Tomorrow </h1>
+            </div>
           </div>
           <div className="container">
-            <p className="heading-main">Education for All</p>
             <p>
-              We help people learn and grow, especially those who don't have
-              many chances. Here's what we do:
+              Our goal is to create a healthier, more sustainable planet for
+              future generations. We aim to achieve this by:
             </p>
 
             <div className="program-list">
@@ -98,31 +100,41 @@ function EducationPage() {
               where they come from. We believe education can change lives and
               make our community stronger!
             </p>
-            <img src="education.jpg" alt="reload" className="educationImg" />
-            <div className="program-list">
+            <img
+              src="unsplash_3k3l2brxmwQ.svg"
+              alt="reload"
+              className="environmentImgDup"
+            />
+            <div className="programGoalList">
               <div className="program-item">
                 <div className="program-content">
-                  <h1 className="SkillDevoplementHead">Skill Devoplement</h1>
-                  <p className="program-title">
-                    Job Fair Success: Connecting Youth with Opportunities
-                  </p>
-                  <p>
-                    On June 9, 2023, Jana Raksha Charitable Trust held a job
-                    fair to help young people find work. Here's what happened:
-                  </p>
-                  <ul className="program-details toOverRideMargin">
-                    <li>240 students attended the event</li>
-                    <li>2 companies offered</li>
-                    <li>There were 515 job </li>
-                    <li>70 students got jobs</li>
-                  </ul>
-                  <p>
-                    This event shows how we're helping young people start their
-                    careers. It's a big step in fighting unemployment and
-                    helping our community grow.We're proud of everyone who
-                    participated and look forward to more events like this in
-                    the future!
-                  </p>
+                  <li className="EnvironmentListsOfGoals">
+                    {" "}
+                    <p>
+                      Our goal is to make the world a better place for everyone.
+                      We believe that small actions can make a big difference.
+                      When we all work together, we can keep our forests healthy
+                      and our air clean.
+                    </p>
+                  </li>
+                  <li className="EnvironmentListsOfGoals">
+                    {" "}
+                    <p>
+                      We also work with local communities to protect their
+                      natural areas. This includes helping farmers use methods
+                      that are good for the land and teaching kids about the
+                      plants and animals around them. By connecting people with
+                      nature, we hope to create a world where everyone cares
+                      about the environment.
+                    </p>
+                  </li>
+
+                  <li className="EnvironmentListsOfGoals">
+                    <p>
+                      Join us in our mission to create a greener, cleaner planet
+                      for today and tomorrow!
+                    </p>
+                  </li>
                 </div>
               </div>
             </div>
@@ -159,4 +171,4 @@ function EducationPage() {
     </div>
   );
 }
-export default EducationPage;
+export default EnvironmentPage;

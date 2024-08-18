@@ -1,0 +1,16 @@
+.paragraph-intro{
+    padding-bottom: 20px;
+    max-width: 94%;
+}
+.aboutUsImg {
+    filter: brightness(1) grayscale(0.5);
+    width: 95%;
+    height: 40vh;
+    padding: 10px 0px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.aboutUsImg:hover {
+    filter: brightness(1) grayscale(0);
+}

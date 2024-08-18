@@ -7,9 +7,7 @@
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    /* grid-template-columns: auto auto; */
     width: 40%;
-    /* justify-content: center; */
     @media (max-width:700px) {
         width: 82%;
     }
@@ -86,8 +84,6 @@
     top: 12%;
     color: #fff;
   }
-  /* .child p {
-    width: 56%;
-  } */
+  
   
  

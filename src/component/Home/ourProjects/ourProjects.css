@@ -42,6 +42,7 @@
 }
 .ourproject-card {
     text-align: center;}
+    
 
     .box {
         text-align: center;
@@ -49,6 +50,7 @@
         padding: 20px;
         flex-direction: column;
     }
+    
 .ourproject-card {
     text-align: center;
     display: flex;
@@ -56,9 +58,7 @@
     align-items: center;
     width: 300px;
 }
-/* .ourproject-card p { */
-   
-/* } */
+
 .ourproject-card p {
     text-align: center;
     width: 14vw;
@@ -74,4 +74,11 @@
 .ourproject-heading {
     margin-top: 24px;
     margin-bottom: 16px;
+}
+.ourprojectHeadingForHAndF{
+    margin-top: 24px;
+}
+.linked{
+    text-decoration: none;
+    color:#000;
 }

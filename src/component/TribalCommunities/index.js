@@ -5,10 +5,18 @@ import donateImage from "../images/Donate.svg";
 import "./index.css";
 const volunteerDonatePartner = [
   {
-    heading: "Environment",
+    heading: "Education",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
     background: "Project.png",
+    buttonText: "Learn more",
+    link: "/Education",
+  },
+  {
+    heading: "Environment",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+    background: "JHHDCTVUY.svg",
     buttonText: "Learn more",
     link: "/Environment",
   },
@@ -20,40 +28,32 @@ const volunteerDonatePartner = [
     buttonText: "Learn more",
     link: "/Health&Familypage",
   },
-  {
-    heading: "Tribal Effairs",
-    paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "JHHDCTVUY.svg",
-    buttonText: "Learn more",
-    link: "/TribalCommunities",
-  },
 ];
 
-function EducationPage() {
+function TribalPage() {
   const programs = [
     {
-      title: "Run programs to teach children and adults",
+      title: "Education",
       details: [
-        "We set up classes in areas where schools are hard to reach",
-        "Our teachers help students with reading, writing, and math",
-        "We also offer adult education classes in the evenings",
+        "We set up schools in tribal areas where children can learn",
+        "Our teachers use methods that respect tribal culture",
+        "We provide books and supplies in local languages",
       ],
     },
     {
-      title: "Give out books and school supplies",
+      title: "Health Care",
       details: [
-        "We provide free textbooks to students who can't afford them",
-        "We hand out notebooks, pens, and other basic school items",
-        "Our mobile library brings books to remote areas",
+        "We bring doctors to tribal villages for check-ups",
+        "Our team teaches about good health habits",
+        "We help tribal people get the medicine they need",
       ],
     },
     {
-      title: "Offer money to help bright students continue their studies",
+      title: "Job Skills",
       details: [
-        "We give scholarships to students who do well in school",
-        "This money helps pay for school fees, uniforms, and supplies",
-        "We support students from elementary school through college",
+        "We teach useful skills like farming, crafts, and computer use",
+        "Our programs help tribal youth find good jobs",
+        "We support tribal artists in selling their traditional art",
       ],
     },
   ];
@@ -67,13 +67,15 @@ function EducationPage() {
           </div>
 
           <div className="Health&FamilyHeading">
-            <h1 className="Health&FamilyWelfare">Education</h1>
+            <div className="Health&FamilyWelfare">
+              <h1>Tribal Communities:</h1>
+            </div>
           </div>
           <div className="container">
-            <p className="heading-main">Education for All</p>
+            <p>Supporting Tribal Communities</p>
             <p>
-              We help people learn and grow, especially those who don't have
-              many chances. Here's what we do:
+              We work with tribal groups to help them grow while keeping their
+              special traditions alive. Here's what we do:
             </p>
 
             <div className="program-list">
@@ -93,36 +95,34 @@ function EducationPage() {
               ))}
             </div>
 
-            <p>
-              Our goal is to make sure everyone has a chance to learn, no matter
-              where they come from. We believe education can change lives and
-              make our community stronger!
-            </p>
-            <img src="education.jpg" alt="reload" className="educationImg" />
-            <div className="program-list">
+            <img
+              src="unsplash_3k3l2brxmwQ.svg"
+              alt="reload"
+              className="environmentImgDup"
+            />
+            <div className="programGoalList">
               <div className="program-item">
                 <div className="program-content">
-                  <h1 className="SkillDevoplementHead">Skill Devoplement</h1>
-                  <p className="program-title">
-                    Job Fair Success: Connecting Youth with Opportunities
-                  </p>
-                  <p>
-                    On June 9, 2023, Jana Raksha Charitable Trust held a job
-                    fair to help young people find work. Here's what happened:
-                  </p>
-                  <ul className="program-details toOverRideMargin">
-                    <li>240 students attended the event</li>
-                    <li>2 companies offered</li>
-                    <li>There were 515 job </li>
-                    <li>70 students got jobs</li>
-                  </ul>
-                  <p>
-                    This event shows how we're helping young people start their
-                    careers. It's a big step in fighting unemployment and
-                    helping our community grow.We're proud of everyone who
-                    participated and look forward to more events like this in
-                    the future!
-                  </p>
+                  <li className="EnvironmentListsOfGoals">
+                    {" "}
+                    <p>
+                      Our goal is to help tribal communities have better lives
+                      while keeping their unique way of life. We believe that
+                      tribal knowledge is valuable and should be protected.
+                    </p>
+                  </li>
+                  <li className="EnvironmentListsOfGoals">
+                    {" "}
+                    <p>
+                      We also work to make sure tribal voices are heard. We help
+                      tribal leaders talk to government officials about their
+                      community's needs. Our team collects stories and songs
+                      from tribal elders to save them for future generations. By
+                      working together, we can create a future where tribal
+                      communities thrive and their cultures are respected by
+                      all.
+                    </p>
+                  </li>
                 </div>
               </div>
             </div>
@@ -159,4 +159,4 @@ function EducationPage() {
     </div>
   );
 }
-export default EducationPage;
+export default TribalPage;

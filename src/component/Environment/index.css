@@ -1,0 +1,20 @@
+.EnvironmentListsOfGoals{
+    list-style-type: none;
+    padding-bottom:10px ;
+}
+.program-list li{
+    list-style-type: "- ";
+  }
+  .programGoalList{
+    margin-top: 8px;
+  }
+
+  .environmentImgDup {
+    
+    width: 95%;
+    height: 40vh;
+    padding: 10px 0px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px;
+}

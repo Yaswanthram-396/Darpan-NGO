@@ -7,47 +7,12 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./component/Home/Navbar/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-// function App() {
-//   function ScrollToTop() {
-//     const { pathname } = useLocation();
-
-//     useEffect(() => {
-//       window.scrollTo(0, 0);
-//     }, [pathname]);
-
-//     return null;
-//   }
-
-//   return (
-//     <Router>
-//       <ScrollToTop />
-//       <Navbar />
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/Health&Familypage" element={<HealthAndfamily />} />
-//         <Route element={<Home />} />
-//       </Routes>
-//     </Router>
-//   );
-// }
-
-// export default App;
-
-// import React, { useEffect } from "react";
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route,
-//   useLocation,
-// } from "react-router-dom";
-// import Navbar from "./Navbar";
-// import Home from "./Home";
-// import HealthAndFamily from "./HealthAndFamily";
+import EnvironmentPage from "./component/Environment";
 import EducationPage from "./component/Education";
+import TribalPage from "./component/TribalCommunities";
+import AboutUs from "./component/AboutUS";
 function ScrollToTop() {
   const { pathname } = useLocation();
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -66,6 +31,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Health&Familypage" element={<HealthAndfamily />} />
           <Route path="/Education" element={<EducationPage />} />
+          <Route path="/Environment" element={<EnvironmentPage />}></Route>
+          <Route path="/TribalCommunities" element={<TribalPage />}></Route>
+          <Route path="/WhoWeAre" element={<AboutUs />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </Router>
