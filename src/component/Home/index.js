@@ -5,6 +5,7 @@ import Testimonials from "./Testimonials/testimonials";
 import MoveWithUs from "./moveWithUs/moveWithUs";
 import OurGallery from "./OurGallery/ourGallery";
 import CarouselPage from "./coursel/coursel";
+import Footerpage from "../Footer/footer";
 // import HealthAndfamily from "../Health&familypage";
 import Navbar from "./Navbar/Navbar";
 
@@ -24,6 +25,7 @@ function Home() {
       <Testimonials />
       <MoveWithUs />
       <OurGallery />
+      <Footerpage />
     </div>
   );
 }

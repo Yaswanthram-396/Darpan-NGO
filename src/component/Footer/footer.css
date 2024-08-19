@@ -1,0 +1,118 @@
+.footerpage{
+    background-color:black ;
+    background-size: cover;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:30px;
+    gap: 76px;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* width: Fixed (130px)px;
+    height: Fixed (118px)px; */
+    flex-grow: 1;
+    margin-left:60px;
+    max-width: 30%;
+    margin-bottom: 40px;
+
+}
+.h1{
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 15.48px;
+    text-align: left;
+
+}
+.h2{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20.44px;
+    margin:0px;
+}
+ul,li {
+    list-style-type: none;
+}
+.p1{
+    color:#ffffff;
+    margin: 0px;
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    /* width: Fixed (130px)px;
+    height: Fixed (118px)px; */
+    flex-grow: 1;
+    max-width: 30%;
+    margin-bottom: 40px;
+
+}
+.card3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* width: Fixed (130px)px;
+    height: Fixed (118px)px; */
+    flex-grow: 1;
+    margin-right: 30px;
+
+}
+.image-text1{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 10px;
+}
+.image-text2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+.fimgs{
+    height: 20px;
+    width:20px;
+    padding-right: 10px;
+    
+}
+@media(max-width:768px) {
+    .footerpage{
+        background-color:black ;
+        background-size: cover;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+       
+        gap: 5px;
+    }
+    .image-text1{
+
+    }
+    .card2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        max-width: 70%;
+        margin-left: 70px;
+    }
+    .card1{
+        max-width: 70%;
+    }
+    .card3{
+        max-width: 70%;
+        margin-left:70px ;
+        margin-right: 0px;
+    }
+}
