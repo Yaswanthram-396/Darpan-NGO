@@ -80,7 +80,11 @@ export function InnerBanner({ image, heading }) {
         <div className="fullText">
           <h1>{heading}</h1>
           <div className="buttons">
-            <button className="Join-as-a-volunteer">Join as a volunteer</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYzhJCOQlwyUKGxcaIWOQwMuXKRLsCkI3cH6wZxBndZ46yvw/viewform">
+              <button className="Join-as-a-volunteer">
+                Join as a volunteer
+              </button>
+            </a>
             <button className="HealthAndFamilyButton">Donate</button>
           </div>
         </div>

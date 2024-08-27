@@ -9,6 +9,9 @@
     border-radius: 16px;
     height: 100%;
     box-shadow: 0px 0.924px 0.924px 0px rgba(0, 0, 0, 0.25);
+    @media (max-width:750px) {
+        font-size: 14px;
+    }
     
 }
 li h1{
@@ -18,20 +21,22 @@ li p{
     text-align-last: left;
 }
 
-.row-1-Ourimpact,.row-2-Ourimpact,.row-3-Ourimpact{
-    display: flex;
-    position: absolute;
+
+
+.row-1-Ourimpact, .row-2-Ourimpact, .row-3-Ourimpact {
+    display: grid;
+    margin-top: 0px;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 10px;
+    /* position: absolute; */
+
+
     @media (max-width:900px) {
         display: none;
         
      }
 }
-.row-1-Ourimpact {
-    position: absolute;
-    top: 0;
-    margin: 20px;
-    gap: 14px;
-}
+
 
     .top-left-card {
         margin-top: 40px;
@@ -49,20 +54,21 @@ li p{
     margin-left: 60px;
 }
 .row-1-Ourimpact {
-    
     top: 0;
-    margin: 20px;
+    /* margin: 20px; */
     gap: 14px;
+    margin-bottom: 24px;
 }
 .row-2-Ourimpact {
     top: 32%;
     gap: 14px;
-    margin: 20px;
+    /* margin: 20px; */
 }
 .row-3-Ourimpact {
     top: 63%;
     gap: 14px;
-    margin: 20px;
+    /* margin: 20px; */
+    margin-bottom: 24px;
 }
 .middle-center-card {
     margin-bottom: 40px;

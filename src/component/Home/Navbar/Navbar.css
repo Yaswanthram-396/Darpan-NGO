@@ -143,6 +143,18 @@ filter: drop-shadow(0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5));
     display: none;
   }
 }
+.navButtons-mobile-joinWithUs{
+  display: none;
+  @media (max-width:701px) {
+    display: block;
+  }
+}
+.navButtons-mobile-donate{
+  display: none;
+  @media (max-width:501px) {
+    display: block;
+  }
+}
 .navButtons-donate{
   @media (max-width:501px) {
     display: none;
@@ -169,7 +181,7 @@ filter: drop-shadow(0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5));
   align-items: center;
   gap: 20px;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   background-color: antiquewhite;
   width: 100%;
   padding: 20px;

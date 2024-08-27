@@ -25,16 +25,16 @@ function Testimonials() {
   return (
     <>
       <div className="testimonials-our-core-team">
-        <div className="heading">
-          <h1>
-            Our<span> Core </span>Team
-          </h1>
-        </div>
         <div className="Ellipses">
           <img className="Ellipse-3" src="Ellipse-Yellow.png" alt="reload" />
           <img className="Ellipse-4" src="Ellipse-Green.png" alt="reload" />
         </div>
         <div class="EllipsesAndButton">
+          <div className="heading">
+            <h1>
+              Our<span> Core </span>Team
+            </h1>
+          </div>
           <div className="cardsAsTestimonials">
             {TestimonialsArray.map((eachPerson) => {
               return (

@@ -1,7 +1,9 @@
+import { useEffect } from "react";
 import { ReDirect } from "../Health&familypage";
 import { InnerBanner } from "../Health&familypage";
 import ImpactOfHandF from "../Health&familypage/impactOnH&F/impactOnH&F";
 import donateImage from "../images/Donate.svg";
+import React, { Component } from "react";
 import "./index.css";
 const volunteerDonatePartner = [
   {
@@ -30,7 +32,7 @@ const volunteerDonatePartner = [
   },
 ];
 
-function EnvironmentPage() {
+function Environment() {
   const programs = [
     {
       title: "Planting Trees",
@@ -170,5 +172,15 @@ function EnvironmentPage() {
       />
     </div>
   );
+}
+
+class EnvironmentPage extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
+  render() {
+    return <Environment />;
+  }
 }
 export default EnvironmentPage;

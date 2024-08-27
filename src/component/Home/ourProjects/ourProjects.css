@@ -4,13 +4,13 @@
 .line-3-div{
     display: inline;
 }
-@media (min-width:940px) and (max-width:1242px) {
+@media (min-width:1056px) and (max-width:1242px) {
     .line-3-div{
         display: none;
     }
     
 }
-@media (max-width:940px) {
+@media (max-width:1032px) {
     .line-2-div{
         display: none;
     }
@@ -38,7 +38,8 @@
     display: flex;
     flex-flow: row wrap;
     /* align-items: baseline; */
-    justify-content: space-around;
+    justify-content: center;
+    gap: 3%;
 }
 .ourproject-card {
     text-align: center;}

@@ -1,33 +1,38 @@
 .EllipsesAndButton {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 11vh;
-    align-items: center;
-    gap: 40px;}
-.Ellipse-3 {
     position: relative;
-    margin-top: 74px;
-    margin-left: 100px;
-    width: 50vw;
-    height: auto;
+    top: 4vh;
+    align-items: center;
+    gap: 32px;
 }
 .Ellipse-4 {
     position: absolute;
-    z-index: -2;
-    width: 50%;
-    height: auto;
+    z-index: -1;
+    /* width: 36%; */
+    height: 100%;
     margin-top: 50px;
     margin-left: 50px;
 }
+.Ellipse-3 { 
+    position: relative; 
+    z-index: -1;
+    /* width: 72vw; */
+    margin-top: 70px;
+    margin-left: 75px;
+    width: 100%;
+    height: auto;
+}
 .Ellipses {
+    position: absolute;
     display: flex;
+    height: 100%;
     justify-content: center;
 }
 .Fidelis-Phoebe, .Fidelis-Phoebe2 {
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 18%;
     padding: 10px;
     border-radius: 10px;
     color: #fff;
@@ -43,12 +48,12 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-left: 40px;
+    margin-top: 1%;
     top: 20vh;
-    gap: 50px;
-
+    gap: 6%;
 }
 .testimonials-our-core-team {
     overflow: none;
@@ -64,12 +69,14 @@
     display: flex;
     text-align: center;
     justify-content: center;
+    position: absolute;
+    margin-top: 0px;
 }
 .testimonials-our-core-team h1 {
-    position: absolute;
-    top: 12vh;
+    /* position: absolute; */
+    /* top: 12vh; */
     margin-left: 40px;
-    width: 38vw;
+    /* width: 38vw; */
     font-size: 32px;
 }
 .testimonials-our-core-team button {
@@ -93,25 +100,25 @@
         margin:0px;
     }
 }
-@media (min-width:2200px) {
-    .Ellipse-3 {
+/* @media (min-width:2200px) {
+    .Ellipse-3 { */
         
         /* position: absolute; */
         /* z-index: -1; */
         
-        width: 32vw;
+        /* width: 32vw; */
         
-    }
-    .Ellipse-4 {
+    /* } */
+    /* .Ellipse-4 { */
         
         /* position: absolute; */
         /* z-index: -1; */
         
-        width: 33%;
+        /* width: 33%; */
         
-    }
+    /* } */
 
-}
+/* } */
 @media (max-width:900px) {
     .EllipsesAndButton {
         top: 18vh;
@@ -128,13 +135,13 @@
         width:30%;
         margin-top: 0px;
     }
-    .Ellipse-3 {
+    /* .Ellipse-3 {
         
         margin-top: 36px;
         margin-left: 0;
         width: 114%;
         height: 125vh;
-    }
+    } */
     .testimonials-our-core-team h1 {
         top: 8vh;
         margin-left: 0px;
@@ -143,14 +150,14 @@
         
         margin-left: 0px;
     }
-    .Ellipse-4 {
+    /* .Ellipse-4 {
         position: absolute;
         z-index: -2;
         width: 107%;
         height: 125vh;
         margin-top: 23px;
         margin-left: 0;
-    }
+    } */
     .testimonials-our-core-team {
         
     
@@ -162,24 +169,24 @@
             
         }
     }
-    @media (min-width:1025px) and (max-width:1200px){
-        .Ellipse-3,.Ellipse-4{
+    /* @media (min-width:1025px) and (max-width:1200px){ */
+        /* .Ellipse-3,.Ellipse-4{
             width: 62vw;
             
-        }
+        } 
          
 
 
-    }
-    @media (min-width:1201px) and (max-width:1400px){
+     } */
+    /* @media (min-width:1201px) and (max-width:1400px){
         .Ellipse-3,.Ellipse-4{
             width: 52vw;
             
-        }
+        } 
          
 
 
-    }
+    } */
     @media (min-width:901px) and (max-width:1024px){
         .cardsAsTestimonials {
             display: flex;
@@ -222,24 +229,22 @@
             margin-left: 40px;
             padding: 10px;
         }
-        .Ellipse-3 {
-            position: relative;
-            /* z-index: -1; */
-            width: 72vw;
+        /* .Ellipse-3 { 
+            position: relative; 
+            z-index: -1;
             margin-top: 70px;
             margin-left: 75px;
-            /* width: 43%; */
+            width: 100%;
             height: auto;
         }
         
             .Ellipse-4 {
                 position: absolute;
                 z-index: 0;
-                width: 70vw;
                 height: auto;
                 margin-top: 88px;
                 margin-left: 50px;
-            }
+            } */
         .testimonials-our-core-team {
             overflow: none;
             height: auto;
@@ -271,13 +276,13 @@
             width:50%;
             margin-top: 0px;
         }
-        .Ellipse-3 {
+        /* .Ellipse-3 {
             
             margin-top: 36px;
         margin-left: 0;
         width: 129%;
         height: 170vh;
-    }
+    } */
         .testimonials-our-core-team h1 {
             top: 8vh;
             margin-left: 0px;
@@ -286,14 +291,14 @@
             
             margin-left: 0px;
         }
-        .Ellipse-4 {
+        /* .Ellipse-4 {
             position: absolute;
         z-index: -2;
         width: 127%;
         height: 170vh;
         margin-top: 23px;
         margin-left: 0;
-    }
+    } */
         
         .testimonials-our-core-team {
             

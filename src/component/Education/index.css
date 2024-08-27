@@ -64,7 +64,6 @@
 
   
   .educationImg {
-    filter: brightness(1) grayscale(0.5);
     width: 95%;
     height: 40vh;
     padding: 10px 0px;
@@ -72,9 +71,7 @@
     object-position: top;
     border-radius: 20px;
 }
-.educationImg:hover {
-    filter: brightness(1) grayscale(0);
-}
+
 
   
   .program-details {

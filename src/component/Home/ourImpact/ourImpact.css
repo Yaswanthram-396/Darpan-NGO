@@ -5,10 +5,13 @@
     padding: 20px;
     margin-top: 5vh;
 }
-.mapImg{
+
+.mapImg {
     border-radius: 16px;
     filter: blur(0.5px);
+    position: absolute;
     width: 50%;
+    z-index: -1;
 }
 @media (max-width:900px) {
     .mapImg{
@@ -20,27 +23,35 @@
 }
 .ourImpactMap {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* grid-template-columns: auto auto auto; */
+    align-items: center;
     border-radius: 16px;
     background-color: rgba(248, 243, 243, 0.50);
     text-align: center;
     padding: 20px 10px;
     position: relative;
     width: 90%;
-    height: 55vh;
+    /* height: 55vh; */
+    gap: 16px;
     box-shadow: 0px 1.407px 1.407px 0px rgba(0, 0, 0, 0.25);
+
     @media (max-width: 900px) {
     
     height:auto;   
      }
-     @media (min-width: 901px) and (max-width: 1210px) {
+     @media (max-width: 601px){
+        width: 112% ;
+        
+     }
+     /* @media (min-width: 901px) and (max-width: 1210px) {
     
         height:74vh;   
          }
          @media (min-width: 1211px) and (max-width: 1330px) {
     
             height:62vh;   
-             }
+             } */
 
 }
 .cards-ourImpact-mobile{
@@ -50,7 +61,8 @@
     position: relative;
     top: 2%;
    padding: 10px;
-    gap: 20px;
+   place-items: center;
+    grid-row-gap: 8px;
 
     
     @media (min-width:901px) {

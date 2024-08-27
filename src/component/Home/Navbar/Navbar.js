@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Navbar.css";
 
@@ -26,14 +27,17 @@ const Navbar = () => {
 
   const handleAboutClick = () => {
     handleScrollTo("ContactUs", -142);
+    setIsRotated(!isRotated);
   };
 
   const handleProjectsClick = () => {
     handleScrollTo("ourProjects1", -50);
+    setIsRotated(!isRotated);
   };
 
   const handleImpactClick = () => {
     handleScrollTo("Our-Impact", -150); // Corrected the offset here
+    setIsRotated(!isRotated);
   };
 
   const handleClick = () => {
@@ -43,7 +47,7 @@ const Navbar = () => {
   const Num = () => {
     return (
       <div className="navMobileOnclick">
-        <li>
+        <li onClick={handleClick} i>
           <a href="/">Home</a>
         </li>
         <li onClick={handleProjectsClick}>
@@ -55,10 +59,12 @@ const Navbar = () => {
         <li onClick={handleAboutClick}>
           <p className="navbarLists"> Contact Us</p>
         </li>
-        <li className="navButtons-join">
-          <button className="joinWithUs">Join With Us</button>
+        <li className="navButtons-mobile-joinWithUs">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYzhJCOQlwyUKGxcaIWOQwMuXKRLsCkI3cH6wZxBndZ46yvw/viewform">
+            <button className="joinWithUs">Join With Us</button>
+          </a>
         </li>
-        <li className="navButtons-donate">
+        <li className="navButtons-mobile-donate">
           <button className="donateStyling">Donate</button>
         </li>
       </div>
@@ -87,7 +93,9 @@ const Navbar = () => {
         </ul>
         <ul>
           <li className="navButtons-join">
-            <button className="joinWithUs">Join With Us</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYzhJCOQlwyUKGxcaIWOQwMuXKRLsCkI3cH6wZxBndZ46yvw/viewform">
+              <button className="joinWithUs">Join With Us</button>
+            </a>
           </li>
           <li className="navButtons-donate">
             <button className="donateStyling">Donate</button>
@@ -100,7 +108,7 @@ const Navbar = () => {
           <img className="navimg" src="Vector.svg" alt="reload" />
         </li>
       </nav>
-      {isRotated ? <Num /> : ""}
+      {isRotated ? <Num /> : null}
     </>
   );
 };
