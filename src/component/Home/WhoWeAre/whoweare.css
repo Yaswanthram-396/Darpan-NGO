@@ -40,15 +40,15 @@
     width: 25.2%;
     height: auto;
 }
-.outer{
+.outer {
     position: relative;
     display: flex;
     flex-direction: row;
     margin-top: 4vh;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     height: auto;
-    /* gap: 100px; */
+    gap: 20%;
     padding: 40px;
 }
 span{
@@ -63,7 +63,7 @@ li{
 .whoWeAreContainer {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 28%;
     gap: 40px;
     padding-left: 10px;
     margin-top: 32px;

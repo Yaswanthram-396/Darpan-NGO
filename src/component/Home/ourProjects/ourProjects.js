@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ourProjects.css";
+import React, { useState } from "react";
 
 const PageCards = () => {
   return (
@@ -22,6 +23,9 @@ const PageCards = () => {
                     Our goal is to make sure everyone has a chance to learn, no
                     matter where they come from.
                   </p>
+                  <div className="DivArrow">
+                    <img src="Arrow 1.svg" alt="Reload" className="Arrow" />
+                  </div>
                 </div>
               </Link>
               <div className="line-1-div">
@@ -35,6 +39,9 @@ const PageCards = () => {
                   <p className="ourproject-paragraph">
                     We are dedicated on conserving the environment and forests.
                   </p>
+                  <div className="DivArrow">
+                    <img src="Arrow 1.svg" alt="Reload" className="Arrow" />
+                  </div>
                 </div>
               </Link>
               <div className="line-2-div">
@@ -51,6 +58,9 @@ const PageCards = () => {
                     Ensuring essential healthcare for all, especially in rural
                     and underserved areas.
                   </p>
+                  <div className="DivArrow">
+                    <img src="Arrow 1.svg" alt="Reload" className="Arrow" />
+                  </div>
                 </div>
               </Link>
               <div className="line-3-div">
@@ -65,6 +75,9 @@ const PageCards = () => {
                     Supporting tribal development and preserving cultural
                     heritage.
                   </p>
+                  <div className="DivArrow">
+                    <img src="Arrow 1.svg" alt="Reload" className="Arrow" />
+                  </div>
                 </div>
               </Link>
             </div>

@@ -1,39 +1,37 @@
-.footerpage{
-    background-color:black ;
-    background-size: cover;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding:30px;
-    gap: 76px;
+.footerpage {
+    background-color: black;
+    /* background-size: cover; */
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    /* justify-content: space-evenly; */
+    padding: 30px;
+    gap: 5%;
 }
-.card1{
+.card1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    /* width: Fixed (130px)px;
-    height: Fixed (118px)px; */
-    flex-grow: 1;
-    margin-left:60px;
-    max-width: 30%;
-    margin-bottom: 40px;
-
+    align-items: start; 
+    /* flex-grow: 1; */
+    /* margin-left: 60px; */
+    max-width: 440px;
+    /* margin-bottom: 40px; */
 }
-.h1{
+.h1 {
     color: #ffffff;
     font-family: Poppins;
     font-size: 28px;
     font-weight: 800;
     line-height: 15.48px;
     text-align: left;
-
+    margin: 14px 0px;
 }
-.h2{
+.h2 {
     color: #ffffff;
     font-weight: 700;
     font-size: 20.44px;
-    margin:0px;
+    margin: 8px 0px;
 }
 ul,li {
     list-style-type: none;
@@ -42,34 +40,26 @@ ul,li {
     color:#ffffff;
     margin: 0px;
 }
-.card2{
+.card2 {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    /* justify-content: center; */
     align-items: center;
-    /* width: Fixed (130px)px;
-    height: Fixed (118px)px; */
-    flex-grow: 1;
-    max-width: 30%;
-    margin-bottom: 40px;
-
+    max-width: 34%;
+    margin-top: 40px;
 }
-.card3{
+.card3 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    /* width: Fixed (130px)px;
-    height: Fixed (118px)px; */
-    flex-grow: 1;
-    margin-right: 30px;
-
+    /* justify-content: center; */
+    margin-top: 30px;
 }
 .image-text1{
      display: flex;
      flex-direction: row;
      align-items: center;
-     gap: 10px;
+     gap: 16px;
+     margin-top: 14px;
 }
 .image-text2{
     display: flex;
@@ -79,9 +69,7 @@ ul,li {
 
 }
 .fimgs{
-    height: 20px;
-    width:20px;
-    padding-right: 10px;
+    height: 24px;
     
 }
 @media(max-width:768px) {
@@ -92,30 +80,35 @@ ul,li {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-       
-        gap: 5px;
+        gap: 32px;
+        padding-left: 48px;
+    
     }
     /* .image-text1{
 
     } */
     .card2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 1;
+        
         max-width: 70%;
-        margin-left: 70px;
+        margin: 0px;
     }
     .card1{
+        margin: 0px;
         max-width: 70%;
     }
     .card3{
-        max-width: 70%;
-        margin-left:70px ;
-        margin-right: 0px;
+        
+     
+        margin: 0px;
     }
+
+   
 }
 .footerpage h1,.footerpage h2{
 color: #ffffff;
+}
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }

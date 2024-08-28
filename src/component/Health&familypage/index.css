@@ -1,12 +1,7 @@
-
-
-
-.lineComesOurProject {
+.listOfContent {
     position: relative;
     top: 140px;
-    /* left: 1%; */
 }
-
 .OurProject {
     display: flex;
     align-items: center;
@@ -171,7 +166,7 @@ li{
     align-items: center;
     gap: 10px;
 }
-.qrvqer {
+.paddingForOurProject {
     padding: 20px;
 }
 

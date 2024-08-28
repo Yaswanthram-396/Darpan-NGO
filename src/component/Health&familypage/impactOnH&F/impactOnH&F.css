@@ -21,16 +21,13 @@
   }
   
   .MoveWithUsdiv button {
-    position: absolute;
-    bottom: 56px;
-    left:20px;
+    
     border-radius: 8px;
   }
   
   
   .parent {
     width:24%;
-    position: relative;
     
     
   }
@@ -66,24 +63,12 @@
   
   
   .background {
-    position: relative;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+   
     background-color: #fff;
     
   }
   
-  .child {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    top: 12%;
-    color: #fff;
-  }
+  
   
   
  

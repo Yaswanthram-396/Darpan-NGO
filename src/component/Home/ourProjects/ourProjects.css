@@ -1,3 +1,36 @@
+.DivArrow {
+    position: absolute;
+    background-color: #ce7c02;
+    opacity: 0;
+    padding:10px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    visibility: hidden;
+    bottom: -15%;
+    left: 45%;
+    transition: bottom 0.6s, opacity 0.5s, visibility 0.5s;
+}
+
+.ourproject-card {
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    position: relative;
+}
+
+.ourproject-card:hover .DivArrow {
+    
+    bottom: -10%;
+    /* right: 0; */
+    opacity: 1;
+    visibility: visible;
+}
 .Line-1,.Line-2,.Line-3{
     height:75%;
 }
@@ -58,12 +91,46 @@
     flex-direction: column;
     align-items: center;
     width: 300px;
+    position: relative;
+    /* z-index: 3; */
+    /* transition: 2s all ease-in-out; */
 }
+/* .ourproject-card::before { */
+    
+    
+    
+
+/* } */
+.box-2 {
+   
+    top: 75%;
+    right: 86%;
+    position: absolute;
+    background-color: yellow;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 3s, right 3s, border-radius 3s, opacity 0.5s, visibility 0.5s;
+}
+
+/* .ourproject-card:hover  {
+    .DivArrow{
+    display: block;
+    position: absolute;
+    background-color: #ce7c02;
+    padding: 13px 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(40px);
+   
+    }
+} */
+
 
 .ourproject-card p {
     text-align: center;
     width: 14vw;
-    @media  (max-width: 900px) {
+    @media  (max-width: 1350px) {
         width: auto;
         padding: 10px 0px;
         
@@ -71,10 +138,16 @@
 }
 .ourproject-paragraph {
     margin-top: 24px;
+    @media (max-width: 650px) {
+        margin-top: 10px;
+    }
 }
 .ourproject-heading {
     margin-top: 24px;
     margin-bottom: 16px;
+    @media (max-width: 650px) {
+        margin-bottom: 0px;
+    }
 }
 .ourprojectHeadingForHAndF{
     margin-top: 24px;
@@ -82,4 +155,8 @@
 .linked{
     text-decoration: none;
     color:#000;
+}
+
+.Arrow {
+    width: 20px;
 }

@@ -1,6 +1,6 @@
 .EducationPage {
-    position: relative;
-    top: 13vh;
+  position: relative;
+  top: 13vh;
     display: flex;
     justify-content: center;
     @media (max-width:800px) {
@@ -19,6 +19,7 @@
 }
 .innerContentOfEducationPage {
     width: 85%;
+    
 }
 
 .Health\&FamilyWelfare {

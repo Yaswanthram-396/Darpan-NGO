@@ -11,21 +11,21 @@ import EnvironmentPage from "./component/Environment";
 import EducationPage from "./component/Education";
 import TribalPage from "./component/TribalCommunities";
 import AboutUs from "./component/AboutUS";
-// function ScrollToTop() {
-//   const { pathname } = useLocation();
-//   useEffect(() => {
-//     window.scrollTo(0, 0);
-//   }, [pathname]);
-
-//   return null;
-// }
+import Footerpage from "./component/Footer/footer";
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 function App() {
   return (
     <>
       <Navbar />
       <Router>
-        {/* <ScrollToTop /> */}
+        <ScrollToTop />
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -37,6 +37,7 @@ function App() {
           <Route path="*" element={<Home />} />
         </Routes>
       </Router>
+      <Footerpage />
     </>
   );
 }

@@ -42,11 +42,11 @@ function MoveWithUs() {
             <>
               <div className="parent">
                 <div style={containerStyle} className="background">
-                  <button>{innerValue.buttonText}</button>
                   <div className="child">
                     <h2>{innerValue.heading}</h2>
                     <p>{innerValue.paragraph}</p>
                   </div>
+                  <button>{innerValue.buttonText}</button>
                 </div>
               </div>
             </>
