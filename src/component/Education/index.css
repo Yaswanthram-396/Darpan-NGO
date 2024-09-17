@@ -1,6 +1,6 @@
 .EducationPage {
-  position: relative;
-  top: 13vh;
+  /* position: relative; */
+  padding-top: 13vh;
     display: flex;
     justify-content: center;
     @media (max-width:800px) {
@@ -33,7 +33,8 @@
   /* margin-bottom: 8px; */
 }
 .container {
-  max-width: 1024px;
+  /* max-width: 1024px; */
+  width: 95%;
   /* margin: 0 auto; */
   padding: 24px;
   background-color: white;
@@ -84,7 +85,7 @@
     padding-left: 16px;
   }
   .overRidePositioning{
-    margin-top: 16vh !important;
+    margin-top: 2% !important;
   }
   .SkillDevoplementHead{
     margin: 26px 0px;

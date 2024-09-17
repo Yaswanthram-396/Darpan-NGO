@@ -163,13 +163,20 @@ function Environment() {
           />
         </div>
       </div>
-      {<ReDirect arrayOfElements={volunteerDonatePartner} />}
-      <InnerBanner
-        image={donateImage}
-        heading={
-          "You can contribute to provide a place for children with special needs!"
-        }
-      />
+      <div className="paddingForOurProject">
+        <div className="OurProject">
+          <img className="line-Health&Family" src="Line (1).svg" alt="reload" />
+          <h4 className="OurProjectHeadingH4">MORE PROJECTS</h4>
+        </div>
+
+        {<ReDirect arrayOfElements={volunteerDonatePartner} />}
+        <InnerBanner
+          image={donateImage}
+          heading={
+            "You can contribute to provide a place for children with special needs!"
+          }
+        />
+      </div>
     </div>
   );
 }

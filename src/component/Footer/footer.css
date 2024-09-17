@@ -8,6 +8,10 @@
     padding: 30px;
     gap: 5%;
 }
+.logoFooter {
+    width: 48%;
+    margin-bottom: 10px;
+}
 .card1 {
     display: flex;
     flex-direction: column;
@@ -43,7 +47,7 @@ ul,li {
 .card2 {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     max-width: 34%;
     margin-top: 40px;
@@ -51,7 +55,7 @@ ul,li {
 .card3 {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     margin-top: 30px;
 }
 .image-text1{

@@ -75,3 +75,30 @@
       border: 1px solid #000000;
       transform: scale(1.1);
       color: #000;}
+
+
+      .outer-gallery-container{
+        display: flex;
+        justify-content: center;
+        width: 96%;
+
+      }
+      .addingSize{
+        width: 80%;
+      }
+      .photos-container{
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .photos-container .slick-slide{
+        padding: 16px !important;
+      }
+      .photos-container .slick-dots{
+        bottom: -8px !important;
+      }
+      .photos-container img{
+        width: 18vw;
+        height: auto;
+      }

@@ -1,6 +1,5 @@
 .listOfContent {
-    position: relative;
-    top: 140px;
+    padding-top: 13vh;
 }
 .OurProject {
     display: flex;

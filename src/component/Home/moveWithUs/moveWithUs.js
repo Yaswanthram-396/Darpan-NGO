@@ -30,7 +30,6 @@ function MoveWithUs() {
       <div className="MoveWithUsdiv">
         {volunteerDonatePartner.map((innerValue) => {
           const containerStyle = {
-            height: "364px",
             backgroundImage: `url(${innerValue.background})`,
             backgroundSize: "cover",
             backgroundPosition: "center",

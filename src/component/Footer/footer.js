@@ -2,7 +2,8 @@ import "./footer.css";
 function Card1() {
   return (
     <div className="card1">
-      <h1 className="h1">Darpan</h1>
+      {/* <h1 className="h1">Darpan</h1> */}
+      <img src="Frame 532 (1).svg" alt="reload" className="logoFooter" />
       <h2 className="h2">Get Connected</h2>
       <p className="p1">
         Join the conversation on social, and stay connected with our latest

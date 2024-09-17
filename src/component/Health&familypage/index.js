@@ -36,7 +36,7 @@ export function ReDirect({ arrayOfElements }) {
     <div className="MoveWithUsdiv">
       {arrayOfElements.map((innerValue) => {
         const containerStyle = {
-          height: "38vh",
+          // height: "38vh",
           backgroundImage: `url(${innerValue.background})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -67,7 +67,7 @@ export function InnerBanner({ image, heading }) {
     backgroundImage: `url(${image})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    width: "81vw",
+    width: "92vw",
     borderRadius: "32px",
     minHeight: "350px",
     display: "flex",

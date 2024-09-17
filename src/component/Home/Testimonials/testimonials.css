@@ -30,9 +30,10 @@
     justify-content: center;
 }
 .Fidelis-Phoebe, .Fidelis-Phoebe2 {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
-    width: 18%;
+    gap: 10px;
+    width: 76% !important;
     padding: 10px;
     border-radius: 10px;
     color: #fff;
@@ -41,9 +42,9 @@
 .cardsAsTestimonials p,.cardsAsTestimonials h2{
     margin: 10px;
 }
-.Fidelis-Phoebe2 {
-    margin-top: 100px;
-}
+/* .Fidelis-Phoebe2 { */
+    /* margin-top: 100px; */
+/* } */
 .cardsAsTestimonials {
     display: flex;
     flex-wrap: nowrap;
@@ -69,7 +70,6 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    position: absolute;
     margin-top: 0px;
 }
 .testimonials-our-core-team h1 {
@@ -313,4 +313,99 @@
         }
 
 
+
+  .button {
+    background-color: #00558B;
+    padding: 10px 20px;
+    margin: 0px 20px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    min-height: 45px
+  }
+  .innerContainer {
+    width: 100% !important;
+    max-width: 976px;
+    margin: 0 auto; /* Centers the container */
+  
+    /* For screens between 601px and 901px */
+    @media (min-width: 601px) and (max-width: 1024px) {
+      padding: 0px 17%;
+    }
+  
+    /* For screens below 700px */
+    @media (max-width: 700px) {
+      width: 92%;
+      padding: 0; /* Remove unnecessary padding */
+    }
+  
+    /* For screens below 600px */
+    @media (max-width: 600px) {
+      width: 92%; /* Restore width on smaller screens */
+      padding: 0px 16%;
+    }
+  }
+  
+  .Fidelis-Phoebe, 
+  .Fidelis-Phoebe2 {
+    margin: 0 10px;  /* Add horizontal space between the cards */
+      /* Padding inside each card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #000;  /* Example background, adjust as needed */
+    border-radius: 8px;
     
+  }
+  .slick-track{
+    width: 100% !important;
+    display: flex !important;
+    column-gap: 1% !important;
+    
+  }
+  .Fidelis-Phoebe.active-slide,
+  .Fidelis-Phoebe2.active-slide {
+    transform: scale(1.1);  /* Scale up the center slide */
+    margin: 0px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Shadow to enhance "pop" effect */
+  }
+  .slick-slide{
+    padding: 34px 0px !important;
+  }
+  .ourCoreTeam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    margin: 2% 0px;
+}
+.slick-slide {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .active-slide {
+    transform: scale(1.1); /* Slightly pop the active one */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for the pop effect */
+  }
+  
+  /* Media query to remove the pop effect on medium and smaller devices */
+  @media (max-width: 1024px) {
+    .active-slide {
+      transform: scale(1); /* No pop effect */
+      box-shadow: none; /* Remove shadow */
+    }
+  }
+  
+  .Fidelis-Phoebe, .Jane-Doe, .John-Smith {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+  }
+  /* .slider-container button{
+    display: none !importan;
+  } */
+  .slick-arrow{
+    display: none !important;
+  }
