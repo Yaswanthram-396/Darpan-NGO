@@ -96,7 +96,12 @@ function Whoweare() {
                 >
                   <div className="video-button">
                     {" "}
-                    <img src="Group 18.png" alt="reload" /> <p>Watch a Video</p>
+                    <img
+                      src="VideoWatch.svg"
+                      className="watchAvideo"
+                      alt="reload"
+                    />{" "}
+                    <p>Watch a Video</p>
                   </div>
                 </a>
                 <VideoModal

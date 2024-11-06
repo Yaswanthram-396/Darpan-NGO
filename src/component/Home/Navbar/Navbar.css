@@ -135,9 +135,11 @@ filter: drop-shadow(0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5));
     border: 1px solid #ffffff;
     transform: scale(0.9);
     color: #000000;}
-/* .logo{
-  /* width: 80px; */
-/* }  */
+ .logo{
+   width: 94%;
+  @media (max-width:1080px) {
+    width: 75%;
+  } } 
 
 .navButtons-join{
   @media (max-width:701px) {
