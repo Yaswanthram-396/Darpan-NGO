@@ -9,24 +9,24 @@ const volunteerDonatePartner = [
   {
     heading: "Education",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "Project.png",
+      "Our goal is to make sure everyone has a chance to learn, no matter where they come from.",
+    background: "educationFigma.svg",
     buttonText: "Learn more",
     link: "/Education",
   },
   {
     heading: "Health and Family Welfare",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "numvhg.svg",
+      "Ensuring essential healthcare for all, especially in rural and underserved areas.",
+    background: "healthAndFamilyFigma.svg",
     buttonText: "Learn more",
     link: "/Health&Familypage",
   },
   {
     heading: "Tribal Effairs",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "JHHDCTVUY.svg",
+      "Supporting tribal development and preserving cultural heritage.",
+    background: "TribalFigma.svg",
     buttonText: "Learn more",
     link: "/TribalCommunities",
   },
@@ -103,7 +103,7 @@ function Environment() {
               make our community stronger!
             </p>
             <img
-              src="unsplash_3k3l2brxmwQ.svg"
+              src="environmentThumb.jpg"
               alt="reload"
               className="environmentImgDup"
             />
@@ -143,23 +143,38 @@ function Environment() {
           </div>
         </div>
       </div>
-      <div className="xdcfghj overRidePositioning">
+      <div
+        className="xdcfghj overRidePositioning"
+        style={{
+          background: "linear-gradient(to right, #d9f99d 5%, #ffffff 100%)",
+        }}
+      >
         <div className="impactOnOtherCards">
           <ImpactOfHandF
-            heading={"20+ orphanage visit in 2 months"}
+            heading={"1,200 People Helped in 1 Month"}
+            heading1={"900 Volunteers Engaged in 2 Month"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+              "In environmental conservation, initiating waste reduction programs and promoting sustainable living practices."
+            }
+            paragraph1={
+              "Focused on reforestation efforts, planting trees to restore local green cover and combat deforestation."
             }
             image={"Edit Square.svg"}
+            image1={"topRight.svg"}
           />
         </div>
         <div className="impactOnOtherCards">
           <ImpactOfHandF
-            heading={"20+ orphanage visit in 2 months"}
+            heading={"1,500 Communities Reached in 1 Month"}
+            heading1={"1,000 Households Educated in 1 Month"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+              "Promoting eco-friendly practices, including reducing plastic waste and implementing recycling programs."
+            }
+            paragraph1={
+              "Raising awareness on water conservation techniques and reducing carbon footprints through energy-saving measures."
             }
             image={"Edit Square.svg"}
+            image1={"bootomRight.svg"}
           />
         </div>
       </div>
@@ -170,13 +185,13 @@ function Environment() {
         </div>
 
         {<ReDirect arrayOfElements={volunteerDonatePartner} />}
-        <InnerBanner
-          image={donateImage}
-          heading={
-            "You can contribute to provide a place for children with special needs!"
-          }
-        />
       </div>
+      <InnerBanner
+        image={donateImage}
+        heading={
+          "You can contribute to provide a place for children with special needs!"
+        }
+      />
     </div>
   );
 }

@@ -25,11 +25,10 @@
     border-radius: 8px;
   }
   
-  
   .parent {
-    width:24%;
-    
-    
+    width: 22%;
+    /* min-height: 300px; */
+    min-height: 24vh;
   }
   @media (max-width:600px) {
     .MoveWithUsdiv {
@@ -42,7 +41,8 @@
   
     }
     .parent{
-      width: 74%;
+      width:79.2vw;
+     
     }
     
     

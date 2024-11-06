@@ -7,6 +7,8 @@ const volunteerDonatePartner = [
       "Join us to impact communities and the environment. Your involvement drives positive change.",
     background: "Volunteer.svg",
     buttonText: "Volunteer",
+    divert:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfYzhJCOQlwyUKGxcaIWOQwMuXKRLsCkI3cH6wZxBndZ46yvw/viewform",
   },
   {
     heading: "Support A Great Course",
@@ -14,6 +16,7 @@ const volunteerDonatePartner = [
       "Your contribution addresses critical issues like healthcare, education, and environmental conservation. Every bit helps.",
     background: "Donate.svg",
     buttonText: "Donate",
+    divert: "none",
   },
   {
     heading: "We Are Open",
@@ -21,6 +24,7 @@ const volunteerDonatePartner = [
       "Together, we can achieve greater results and foster sustainable development.",
     background: "PartnerWithUs.svg",
     buttonText: "Partner with us",
+    divert: "none",
   },
 ];
 
@@ -45,7 +49,9 @@ function MoveWithUs() {
                     <h2>{innerValue.heading}</h2>
                     <p>{innerValue.paragraph}</p>
                   </div>
-                  <button>{innerValue.buttonText}</button>
+                  <a href={innerValue.divert}>
+                    <button>{innerValue.buttonText}</button>
+                  </a>
                 </div>
               </div>
             </>

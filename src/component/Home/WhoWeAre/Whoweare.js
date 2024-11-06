@@ -56,7 +56,7 @@ function Whoweare() {
     <>
       <div className="outer">
         <img className="cutter" src="/Subtractofz-index3.png" alt="reload" />
-        <img className="innerCutter" src="childblack&white.svg" alt="reload" />
+        <img className="innerCutter" src="whoWeAreImg.svg" alt="reload" />
         {/* </div> */}
         <div className="whoWeAreContainer">
           <div>

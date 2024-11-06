@@ -116,3 +116,6 @@ color: #ffffff;
     flex-direction: column;
     gap: 16px;
 }
+.threads {
+    height: 32px;
+}

@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    padding-left: 2%;
+    padding-left: 8%;
 }
 .line-Health\&Family {
     width: 75px;
@@ -108,7 +108,7 @@ li{
 .lineComesOurProject li{
     padding: 10px 0px;
     @media (max-width:900px) {
-        font-size: 12px;
+        font-size: 16px;
         
     }
 }
@@ -133,9 +133,9 @@ li{
 .impactOnOtherCards {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-around;
-    grid-column-gap: 48px;
-    grid-row-gap: 48px;
+    justify-content: center;
+    grid-column-gap: 6%;
+
 }
 
 .xdcfghj {
@@ -144,12 +144,16 @@ li{
     align-items: center;
     margin-top: 72px;
     gap: 32px;
-    background-color: #FFF193;
+    /* background-color: #fef08a; */
+    background: linear-gradient(to right, #fef08a 5%, #ffffff 100%);
+    
+
     padding: 70px 10px;
 }
 .impactOnOtherCards {
     display: flex;
    flex-direction: row;
+   width: 95%;
     
     @media (max-width:700px) {
         flex-direction: column;
@@ -190,10 +194,18 @@ li{
     align-items: center;
     color: #fff;
     text-align: center;
+    @media (max-width:700px) {
+        width: 90%;
+    }
 }
 .buttons {
     display: flex;
+    flex-direction: row;
+
     gap: 20px;
+    @media (max-width:500px) {
+        flex-direction: column;
+    }
 }
 .fullText button{
     border-radius: 8px;
@@ -205,4 +217,9 @@ background-color: #F2C94C;
     color: #000;}
 .HealthAndFamilyButton{
 background-color: #fff;
+}
+.changeWidth{
+    @media (max-width:1330px) {
+        width: 92vw !important;
+    }
 }

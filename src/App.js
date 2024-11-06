@@ -23,8 +23,8 @@ function ScrollToTop() {
 function App() {
   return (
     <>
-      <Navbar />
       <Router>
+        <Navbar />
         <ScrollToTop />
 
         <Routes>
@@ -36,8 +36,8 @@ function App() {
           <Route path="/WhoWeAre" element={<AboutUs />} />
           <Route path="*" element={<Home />} />
         </Routes>
+        <Footerpage />
       </Router>
-      <Footerpage />
     </>
   );
 }

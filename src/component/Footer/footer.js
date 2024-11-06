@@ -9,12 +9,19 @@ function Card1() {
         Join the conversation on social, and stay connected with our latest
         events and partners around the world.
       </p>
-
       <div className="image-text1">
-        <img src="twitter.svg" className="fimgs" alt="reload" />
-        <img src="facebook.svg" className="fimgs" alt="reload" />
-        <img src="insta.svg" className="fimgs" alt="reload" />
-        <img src="youtube.svg" className="fimgs" alt="reload" />
+        <a href="https://www.instagram.com/janaraksha_official?igsh=azBsM2pwM2YzNGVp&utm_source=qr">
+          <img src="insta.svg" className="fimgs" alt="insta" />
+        </a>
+        <a href="https://www.youtube.com/watch?v=VUmz7xVMqOc">
+          <img src="youtube.svg" className="fimgs" alt="reload" />
+        </a>
+        <a href="https://www.threads.net/@janaraksha_official">
+          <img src="threads.png" className="threads" alt="reload" />
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=919676463605&text&type=phone_number&app_absent=0">
+          <img src="whatsapp.svg" className="fimgs" alt="reload" />
+        </a>
       </div>
     </div>
   );
@@ -24,18 +31,21 @@ function Card3() {
     <div className="card3">
       <h2 className="h2">Contact Us</h2>
       <div className="contactInfo">
-        <div className="image-text2">
-          <img src="GPS.svg" className="fimgs" alt="reload" />
-          <p className="p1">Ojay Street, Kreg Ave, Lagos, Nigeria</p>
-        </div>
-        <div className="image-text2">
-          <img src="message.svg" className="fimgs" alt="reload" />
-          <p className="p1">janarakshango7@gmail.com</p>
-        </div>
+        <a href="https://www.google.com/maps/place/JANA+RAKSHA+SWACHANDA+SEVA+SAMSTHA/@16.8682339,82.1124237,18.94z/data=!4m6!3m5!1s0x3a378f0726176b57:0x994f7be69514b740!8m2!3d16.8684492!4d82.1125788!16s%2Fg%2F11vq6g7_zn?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D">
+          <div className="image-text2">
+            <img src="GPS.svg" className="fimgs" alt="reload" />
+            <p className="p1">Velangi, Karapa Mandal, Andhra Pradesh, 533260</p>
+          </div>
+        </a>
+        <a href="mailto:janaraksha.info@gmail.com">
+          <div class="image-text2">
+            <img src="message.svg" class="fimgs" alt="reload" />
+            <p class="p1">janarakshango7@gmail.com</p>
+          </div>
+        </a>
         <div className="image-text2">
           <img src="call.svg" className="fimgs" alt="reload" />
-
-          <p className="p1">+91 6302406660</p>
+          <p className="p1">+91 96764 63605</p>
         </div>
       </div>
     </div>

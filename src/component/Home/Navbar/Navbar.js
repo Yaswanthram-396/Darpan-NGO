@@ -1,17 +1,17 @@
-import React from "react";
-// import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isRotated, setIsRotated] = useState(false);
   const [scrollTo, setScrollTo] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (scrollTo) {
       const section = document.getElementById(scrollTo.id);
       if (section) {
-        console.log(`Scrolling to: ${scrollTo.id}`); // Debugging log
+        console.log(`Scrolling to: ${scrollTo.id}`);
         const yOffset = scrollTo.offset || 0;
         const y =
           section.getBoundingClientRect().top + window.pageYOffset + yOffset;
@@ -31,19 +31,34 @@ const Navbar = () => {
   };
 
   const handleProjectsClick = () => {
-    handleScrollTo("ourProjects1", -50);
+    const refer = window.location.pathname;
+    if (refer !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        handleScrollTo("ourProjects1", -50);
+      }, 100);
+    } else {
+      handleScrollTo("ourProjects1", -50);
+    }
     setIsRotated(!isRotated);
   };
 
   const handleImpactClick = () => {
-    handleScrollTo("Our-Impact", -150); // Corrected the offset here
+    const refer = window.location.pathname;
+    if (refer !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        handleScrollTo("Our-Impact", -150);
+      }, 100);
+    } else {
+      handleScrollTo("Our-Impact", -150);
+    }
     setIsRotated(!isRotated);
   };
 
   const handleClick = () => {
     setIsRotated(!isRotated);
   };
-
   const Num = () => {
     return (
       <div className="navMobileOnclick">
@@ -74,9 +89,11 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="navbar-logo">
-          <img className="logo" src="Darpan logo edit (1).svg" alt="reload" />
-        </div>
+        <a href="/">
+          <div className="navbar-logo">
+            <img className="logo" src="Darpan logo edit (1).svg" alt="reload" />
+          </div>
+        </a>
         <ul className="navbar-links">
           <li className="listNav">
             <a href="/">Home</a>

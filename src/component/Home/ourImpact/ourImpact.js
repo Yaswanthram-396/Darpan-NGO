@@ -6,77 +6,77 @@ import "./ourImpact.css";
 const ContentArray1 = [
   {
     id: 1,
-    heading: "15 MILLION PEOPLE",
+    heading: "1,200 People Helped",
     class: "top-left-card",
     paragraph:
-      "Our life-saving programmes in 2022 reached 15 million people in Nigeria",
+      " In the areas of education and skill development, providing access to quality learning opportunities.",
   },
 
   {
     id: 1,
-    heading: "15 MILLION PEOPLE",
+    heading: "850 People Supported",
     class: "top-center-card",
     paragraph:
-      "We fight hunger, improve agriculture growth and provide nutrition in 36 states in Nigeria",
+      "Focused on tribal affairs, empowering indigenous communities with resources and education.",
   },
 
   {
     id: 1,
-    heading: "15 MILLION PEOPLE",
+    heading: "2,300 Lives Impacted",
     class: "top-right-card",
     paragraph:
-      "We pay our caretakers to manage the properties. They live at the farm are responsible for the success of the crops",
+      "Through environmental initiatives, promoting sustainability and protecting local ecosystems.",
   },
 ];
 const ContentArray2 = [
   {
     id: 1,
-    heading: "15 MILLION PEOPLE",
+    heading: " 1,500 Families Assisted",
     class: "middle-left-card",
     paragraph:
-      "Repair & maintenance of electricity, machines, tools and structures costs",
+      "In health and family welfare, improving access to healthcare and maternal care services",
   },
 
   {
     id: 1,
-    heading: "15 MILLION PEOPLE",
+    heading: "980 Students Benefited",
     class: "middle-center-card",
     paragraph:
-      "Out of every 1 naira raised, 99% goes towards our charitable activities",
+      " Through educational programs, enabling access to scholarships and digital learning platforms.",
   },
 
   {
     id: 1,
-    heading: "15 MILLION PEOPLE",
+    heading: "700 Villagers Empowered",
     class: "middle-right-card",
     paragraph:
-      "Our life-saving programmes in 2022 reached 15 million people in Nigeria",
+      " In tribal affairs, providing infrastructure and cultural preservation efforts.",
   },
 ];
 
 const ContentArray3 = [
   {
     id: 1,
-    heading: "15 MILLION PEOPLE",
+    heading: "1,600 Citizens Engaged",
     class: "bottom-left-card",
     paragraph:
-      "Our life-saving programmes in 2022 reached 15 million people in Nigeria",
+      " In environmental awareness campaigns, promoting eco-friendly practices and waste management.",
   },
 
   {
     id: 1,
-    heading: "15 MILLION PEOPLE",
+    heading: "2,000 Women Supported",
     class: "bottom-center-card",
     paragraph:
-      "Our life-saving programmes in 2022 reached 15 million people in Nigeria",
+      " In health and family welfare, enhancing women's access to healthcare, prenatal care, and nutrition.",
   },
 
   {
     id: 1,
-    heading: "15 MILLION PEOPLE",
+    heading: "1,050 People Uplifted",
     class: "bottom-right-card",
     paragraph:
-      "Our life-saving programmes in 2022 reached 15 million people in Nigeria",
+      "Focused on education, providing tools and resources for remote learning in underserved communities.",
   },
 ];
 let combinedArray = ContentArray1.concat(ContentArray2, ContentArray3);

@@ -8,24 +8,23 @@ const volunteerDonatePartner = [
   {
     heading: "Education",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "Project.png",
+      " Our goal is to make sure everyone has a chance to learn, no matter where they come from.",
+    background: "educationFigma.svg",
     buttonText: "Learn more",
     link: "/Education",
   },
   {
     heading: "Environment",
-    paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "numvhg.svg",
+    paragraph: "We are dedicated on conserving the environment and forests.",
+    background: "environmentFigma.svg",
     buttonText: "Learn more",
     link: "/Environment",
   },
   {
     heading: "Tribal Effairs",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "JHHDCTVUY.svg",
+      "Supporting tribal development and preserving cultural heritage.",
+    background: "TribalFigma.svg",
     buttonText: "Learn more",
     link: "/TribalCommunities",
   },
@@ -36,7 +35,6 @@ export function ReDirect({ arrayOfElements }) {
     <div className="MoveWithUsdiv">
       {arrayOfElements.map((innerValue) => {
         const containerStyle = {
-          // height: "38vh",
           backgroundImage: `url(${innerValue.background})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -67,7 +65,7 @@ export function InnerBanner({ image, heading }) {
     backgroundImage: `url(${image})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    width: "92vw",
+    width: "70vw",
     borderRadius: "32px",
     minHeight: "350px",
     display: "flex",
@@ -77,7 +75,7 @@ export function InnerBanner({ image, heading }) {
 
   return (
     <div className="outerToConnectWithUs">
-      <div style={divStyle}>
+      <div style={divStyle} className="changeWidth">
         <div className="fullText">
           <h1>{heading}</h1>
           <div className="buttons">
@@ -151,7 +149,7 @@ function HealthAndfamily() {
                   </li>
                 </div>
                 <img
-                  src="DeWatermark.ai_1722620739345.png"
+                  src="bloodDonation.jpg"
                   className="bloodDonateImg orderedimg1"
                   alt="reload"
                 />
@@ -187,7 +185,7 @@ function HealthAndfamily() {
                   </li>
                 </div>
                 <img
-                  src="DeWatermark.ai_1722620739345.png"
+                  src="eyeAnddentalCamp.jpg"
                   className="bloodDonateImg orderedimg2"
                   alt="reload"
                 />
@@ -195,9 +193,7 @@ function HealthAndfamily() {
             </div>
             <div className="BloodDonationInitiativeslistComeHead">
               <div>
-                <h3 className="BloodDonationInitiatives">
-                  Blood Donation Initiatives:
-                </h3>
+                <h3 className="BloodDonationInitiatives">Organ Donation:</h3>
               </div>
               <div className="BloodDonationParaImage">
                 <div className="BloodDonationInitiativesPara orderedPara3">
@@ -230,7 +226,7 @@ function HealthAndfamily() {
                   </li>
                 </div>
                 <img
-                  src="DeWatermark.ai_1722620739345.png"
+                  src="organDonation.jpg"
                   className="bloodDonateImg orderedimg3"
                   alt="reload"
                 />
@@ -238,23 +234,38 @@ function HealthAndfamily() {
             </div>
           </div>
         </div>
-        <div className="xdcfghj">
+        <div
+          className="xdcfghj"
+          style={{
+            background: "linear-gradient(to right, #fecaca 5%, #ffffff 100%)",
+          }}
+        >
           <div className="impactOnOtherCards">
             <ImpactOfHandF
-              heading={"20+ orphanage visit in 2 months"}
+              heading={" 800 Students Empowered in 1 Month"}
+              heading1={"1,200 Learners Supported in 1 Month"}
               paragraph={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+                "Through digital literacy programs, enabling access to online educational resources and skill development platforms."
+              }
+              paragraph1={
+                "Focused on rural education, distributing learning materials and organizing virtual classes for underserved areas."
               }
               image={"Edit Square.svg"}
+              image1={"topRight.svg"}
             />
           </div>
           <div className="impactOnOtherCards">
             <ImpactOfHandF
-              heading={"20+ orphanage visit in 2 months"}
+              heading={" 800 Students Empowered in 1 Month"}
+              heading1={"1,200 Learners Supported in 1 Month"}
               paragraph={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+                "Through digital literacy programs, enabling access to online educational resources and skill development platforms."
               }
-              image={"Edit Square.svg"}
+              paragraph1={
+                "Focused on rural education, distributing learning materials and organizing virtual classes for underserved areas."
+              }
+              image={"bootomLeft.svg"}
+              image1={"bootomRight.svg"}
             />
           </div>
         </div>

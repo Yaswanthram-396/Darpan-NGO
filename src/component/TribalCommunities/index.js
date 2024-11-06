@@ -7,24 +7,23 @@ const volunteerDonatePartner = [
   {
     heading: "Education",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "Project.png",
+      "Our goal is to make sure everyone has a chance to learn, no matter where they come from.",
+    background: "educationFigma.svg",
     buttonText: "Learn more",
     link: "/Education",
   },
   {
     heading: "Environment",
-    paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "JHHDCTVUY.svg",
+    paragraph: "We are dedicated on conserving the environment and forests.",
+    background: "environmentFigma.svg",
     buttonText: "Learn more",
     link: "/Environment",
   },
   {
     heading: "Health and Family Welfare",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "numvhg.svg",
+      "Ensuring essential healthcare for all, especially in rural and underserved areas.",
+    background: "healthAndFamilyFigma.svg",
     buttonText: "Learn more",
     link: "/Health&Familypage",
   },
@@ -96,7 +95,7 @@ function TribalPage() {
             </div>
 
             <img
-              src="unsplash_3k3l2brxmwQ.svg"
+              src="tribalThumb.jpg"
               alt="reload"
               className="environmentImgDup"
             />
@@ -129,23 +128,38 @@ function TribalPage() {
           </div>
         </div>
       </div>
-      <div className="xdcfghj overRidePositioning">
+      <div
+        className="xdcfghj overRidePositioning"
+        style={{
+          background: "linear-gradient(to right, #a7f3d0 0%, #ffffff 100%)",
+        }}
+      >
         <div className="impactOnOtherCards">
           <ImpactOfHandF
-            heading={"20+ orphanage visit in 2 months"}
+            heading={" 800 Students Empowered in 1 Month"}
+            heading1={"1,200 Learners Supported in 1 Month"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+              "Through digital literacy programs, enabling access to online educational resources and skill development platforms."
+            }
+            paragraph1={
+              "Focused on rural education, distributing learning materials and organizing virtual classes for underserved areas."
             }
             image={"Edit Square.svg"}
+            image1={"topRight.svg"}
           />
         </div>
         <div className="impactOnOtherCards">
           <ImpactOfHandF
-            heading={"20+ orphanage visit in 2 months"}
+            heading={" 800 Students Empowered in 1 Month"}
+            heading1={"1,200 Learners Supported in 1 Month"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+              "Through digital literacy programs, enabling access to online educational resources and skill development platforms."
             }
-            image={"Edit Square.svg"}
+            paragraph1={
+              "Focused on rural education, distributing learning materials and organizing virtual classes for underserved areas."
+            }
+            image={"bootomLeft.svg"}
+            image1={"bootomRight.svg"}
           />
         </div>
       </div>
@@ -155,13 +169,13 @@ function TribalPage() {
           <h4 className="OurProjectHeadingH4">MORE PROJECTS</h4>
         </div>
         {<ReDirect arrayOfElements={volunteerDonatePartner} />}
-        <InnerBanner
-          image={donateImage}
-          heading={
-            "You can contribute to provide a place for children with special needs!"
-          }
-        />
       </div>
+      <InnerBanner
+        image={donateImage}
+        heading={
+          "You can contribute to provide a place for children with special needs!"
+        }
+      />
     </div>
   );
 }

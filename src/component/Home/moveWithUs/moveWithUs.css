@@ -6,11 +6,11 @@
     flex-wrap: nowrap;
     flex-direction: row;
     /* align-items: center; */
-    justify-content: space-around;
+    justify-content: center;
     padding: 20px;
     top: 20vh;
-    margin: 5vh 0px;
-    gap: 50px;
+    margin-top: 5vh ;
+    gap: 56px;
     /* width: 100%; */
 }
 
@@ -21,12 +21,7 @@
 }
 
 
-.parent {
-  width:24%;
-  /* position: relative; */
-  
-  
-}
+
 @media (max-width:600px) {
   .MoveWithUsdiv {
     flex-direction: column;
@@ -37,7 +32,7 @@
 
   }
   .parent{
-    width: 74%;
+    width: 79.2vw;
   }
   
   
@@ -67,6 +62,10 @@
 
     padding-bottom: 24px;
     height: 100%;
+    /* @media (min-width:1850px) {
+      height: 124%;
+      
+    } */
 }
 
 .child {

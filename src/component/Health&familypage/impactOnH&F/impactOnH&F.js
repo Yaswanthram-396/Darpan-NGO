@@ -1,6 +1,13 @@
 import "./impactOnH&F.css";
 
-function ImpactOfHandF({ heading, paragraph, image }) {
+function ImpactOfHandF({
+  heading,
+  heading1,
+  paragraph,
+  paragraph1,
+  image,
+  image1,
+}) {
   return (
     <>
       <div className="others">
@@ -15,13 +22,13 @@ function ImpactOfHandF({ heading, paragraph, image }) {
         </ul>
       </div>
       <div className="others">
-        <img className="impactLeftTop" src={image} alt="Reload" />
+        <img className="impactLeftTop" src={image1} alt="Reload" />
         <ul>
           <li className="headingLeftTop">
-            <h2>{heading}</h2>
+            <h2>{heading1}</h2>
           </li>
           <li className="paraLeftTop">
-            <p>{paragraph}</p>
+            <p>{paragraph1}</p>
           </li>
         </ul>
       </div>

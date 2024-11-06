@@ -6,25 +6,24 @@ import "./index.css";
 const volunteerDonatePartner = [
   {
     heading: "Environment",
-    paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "Project.png",
+    paragraph: "We are dedicated on conserving the environment and forests.",
+    background: "environmentFigma.svg",
     buttonText: "Learn more",
     link: "/Environment",
   },
   {
     heading: "Health and Family Welfare",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "numvhg.svg",
+      "Ensuring essential healthcare for all, especially in rural and underserved areas.",
+    background: "healthAndFamilyFigma.svg",
     buttonText: "Learn more",
     link: "/Health&Familypage",
   },
   {
     heading: "Tribal Effairs",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    background: "JHHDCTVUY.svg",
+      "Supporting tribal development and preserving cultural heritage.",
+    background: "TribalFigma.svg",
     buttonText: "Learn more",
     link: "/TribalCommunities",
   },
@@ -98,7 +97,11 @@ function EducationPage() {
               where they come from. We believe education can change lives and
               make our community stronger!
             </p>
-            <img src="education.jpg" alt="reload" className="educationImg" />
+            <img
+              src="EducationThumb.jpg"
+              alt="reload"
+              className="educationImg"
+            />
             <div className="program-list">
               <div className="program-item">
                 <div className="program-content">
@@ -132,20 +135,30 @@ function EducationPage() {
       <div className="xdcfghj overRidePositioning">
         <div className="impactOnOtherCards">
           <ImpactOfHandF
-            heading={"20+ orphanage visit in 2 months"}
+            heading={" 800 Students Empowered in 1 Month"}
+            heading1={"1,200 Learners Supported in 1 Month"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+              "Through digital literacy programs, enabling access to online educational resources and skill development platforms."
+            }
+            paragraph1={
+              "Focused on rural education, distributing learning materials and organizing virtual classes for underserved areas."
             }
             image={"Edit Square.svg"}
+            image1={"topRight.svg"}
           />
         </div>
         <div className="impactOnOtherCards">
           <ImpactOfHandF
-            heading={"20+ orphanage visit in 2 months"}
+            heading={"950 Children Benefited in 1 Month"}
+            heading1={"1,100 Teachers Trained in 1 Month"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+              "Providing access to scholarships and after-school programs to improve educational opportunities for young learners."
             }
-            image={"Edit Square.svg"}
+            paragraph1={
+              "Offering professional development courses to educators, enhancing teaching methodologies and classroom engagement."
+            }
+            image={"bootomLeft.svg"}
+            image1={"bootomRight.svg"}
           />
         </div>
       </div>
@@ -155,13 +168,13 @@ function EducationPage() {
           <h4 className="OurProjectHeadingH4">MORE PROJECTS</h4>
         </div>
         {<ReDirect arrayOfElements={volunteerDonatePartner} />}
-        <InnerBanner
-          image={donateImage}
-          heading={
-            "You can contribute to provide a place for children with special needs!"
-          }
-        />
       </div>
+      <InnerBanner
+        image={donateImage}
+        heading={
+          "You can contribute to provide a place for children with special needs!"
+        }
+      />
     </div>
   );
 }

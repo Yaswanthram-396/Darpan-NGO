@@ -12,6 +12,14 @@
     bottom: -15%;
     left: 45%;
     transition: bottom 0.6s, opacity 0.5s, visibility 0.5s;
+    @media (max-width:600px) {
+        opacity: 1;
+        position: static;
+        visibility: visible;
+        padding: 5px;
+
+        
+    }
 }
 
 .ourproject-card {
@@ -22,14 +30,19 @@
     align-items: center;
     width: 300px;
     position: relative;
+    @media (max-width:600px) {
+        padding-bottom: 20px;
+        
+    }
 }
 
-.ourproject-card:hover .DivArrow {
+.ourproject-card:hover .DivArrow { 
     
     bottom: -10%;
-    /* right: 0; */
+    right: 0;
     opacity: 1;
     visibility: visible;
+
 }
 .Line-1,.Line-2,.Line-3{
     height:75%;
