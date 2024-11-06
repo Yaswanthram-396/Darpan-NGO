@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./ourProjects.css";
-import React, { useState } from "react";
 
 const PageCards = () => {
   return (

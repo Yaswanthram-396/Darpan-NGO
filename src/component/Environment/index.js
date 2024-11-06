@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { ReDirect } from "../Health&familypage";
 import { InnerBanner } from "../Health&familypage";
 import ImpactOfHandF from "../Health&familypage/impactOnH&F/impactOnH&F";
