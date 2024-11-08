@@ -24,7 +24,8 @@ const volunteerDonatePartner = [
       "Together, we can achieve greater results and foster sustainable development.",
     background: "PartnerWithUs.svg",
     buttonText: "Partner with us",
-    divert: "none",
+    divert:
+      "https://api.whatsapp.com/send/?phone=919676463605&text&type=phone_number&app_absent=0",
   },
 ];
 
@@ -41,20 +42,27 @@ function MoveWithUs() {
             overflow: "hidden",
           };
 
+          const handleClick = (e) => {
+            if (innerValue.buttonText === "Donate") {
+              e.preventDefault();
+              alert(
+                "Sorry for the inconvenience! This Payment method will be implemented soon..."
+              );
+            }
+          };
+
           return (
-            <>
-              <div className="parent">
-                <div style={containerStyle} className="background">
-                  <div className="child">
-                    <h2>{innerValue.heading}</h2>
-                    <p>{innerValue.paragraph}</p>
-                  </div>
-                  <a href={innerValue.divert}>
-                    <button>{innerValue.buttonText}</button>
-                  </a>
+            <div key={innerValue.heading} className="parent">
+              <div style={containerStyle} className="background">
+                <div className="child">
+                  <h2>{innerValue.heading}</h2>
+                  <p>{innerValue.paragraph}</p>
                 </div>
+                <a href={innerValue.divert} onClick={handleClick}>
+                  <button>{innerValue.buttonText}</button>
+                </a>
               </div>
-            </>
+            </div>
           );
         })}
       </div>

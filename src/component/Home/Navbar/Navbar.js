@@ -21,6 +21,13 @@ const Navbar = () => {
     }
   }, [scrollTo]);
 
+  const handleClickDonate = (e) => {
+    e.preventDefault();
+    alert(
+      "Sorry for the inconvenience! This Payment method will be implemented soon..."
+    );
+  };
+
   const handleScrollTo = (id, offset = 0) => {
     setScrollTo({ id, offset });
   };
@@ -80,7 +87,9 @@ const Navbar = () => {
           </a>
         </li>
         <li className="navButtons-mobile-donate">
-          <button className="donateStyling">Donate</button>
+          <button onClick={handleClickDonate} className="donateStyling">
+            Donate
+          </button>
         </li>
       </div>
     );
@@ -115,7 +124,9 @@ const Navbar = () => {
             </a>
           </li>
           <li className="navButtons-donate">
-            <button className="donateStyling">Donate</button>
+            <button onClick={handleClickDonate} className="donateStyling">
+              Donate
+            </button>
           </li>
         </ul>
         <li
