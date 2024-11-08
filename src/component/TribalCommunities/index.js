@@ -172,9 +172,7 @@ function TribalPage() {
       </div>
       <InnerBanner
         image={donateImage}
-        heading={
-          "You can contribute to provide a place for children with special needs!"
-        }
+        heading={"Empowering Tribes, Preserving Traditions, Building Futures."}
       />
     </div>
   );

@@ -202,5 +202,5 @@ filter: drop-shadow(0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5));
 }
  a{
   color: #000;
-  text-decoration: none;
+  text-decoration: none !important;
 }

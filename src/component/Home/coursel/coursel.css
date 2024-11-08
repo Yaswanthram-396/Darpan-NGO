@@ -8,8 +8,8 @@
 .carousel-indicators [data-bs-target] {
   border-radius: 100%;
   z-index: 1!important;
-  width: 16px !important;
-  height: 16px !important;
+  width: 10px !important;
+  height: 10px !important;
 }
 .slide{
   

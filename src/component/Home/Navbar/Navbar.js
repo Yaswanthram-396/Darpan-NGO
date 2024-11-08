@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
+export const handleClickDonate = (e) => {
+  e.preventDefault();
+  alert(
+    "Sorry for the inconvenience! This Payment method will be implemented soon..."
+  );
+};
 const Navbar = () => {
   const [isRotated, setIsRotated] = useState(false);
   const [scrollTo, setScrollTo] = useState(null);
@@ -20,13 +26,6 @@ const Navbar = () => {
       setScrollTo(null);
     }
   }, [scrollTo]);
-
-  const handleClickDonate = (e) => {
-    e.preventDefault();
-    alert(
-      "Sorry for the inconvenience! This Payment method will be implemented soon..."
-    );
-  };
 
   const handleScrollTo = (id, offset = 0) => {
     setScrollTo({ id, offset });

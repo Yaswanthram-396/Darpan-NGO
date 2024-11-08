@@ -3,6 +3,7 @@ import ImpactOfHandF from "./impactOnH&F/impactOnH&F";
 import donateImage from "../images/Donate.svg";
 import React from "react";
 import { Link } from "react-router-dom";
+import { handleClickDonate } from "../Home/Navbar/Navbar";
 
 const volunteerDonatePartner = [
   {
@@ -84,14 +85,18 @@ export function InnerBanner({ image, heading }) {
                 Join as a volunteer
               </button>
             </a>
-            <button className="HealthAndFamilyButton">Donate</button>
+            <button
+              onClick={handleClickDonate}
+              className="HealthAndFamilyButton"
+            >
+              Donate
+            </button>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
 function HealthAndfamily() {
   return (
     <>

@@ -188,7 +188,7 @@ function Environment() {
       <InnerBanner
         image={donateImage}
         heading={
-          "You can contribute to provide a place for children with special needs!"
+          "Save Trees, Save the Environment, and Create Green Spaces for a Sustainable Future!"
         }
       />
     </div>

@@ -172,7 +172,7 @@ function EducationPage() {
       <InnerBanner
         image={donateImage}
         heading={
-          "You can contribute to provide a place for children with special needs!"
+          "Empower Every Child: Support Inclusive Education for Special Needs!"
         }
       />
     </div>

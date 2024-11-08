@@ -4,17 +4,9 @@ import "./coursel.css";
 import { Link } from "react-router-dom";
 
 function CarouselPage() {
-  // Get the height of the viewport
-  // let viewportHeight = window.innerHeight;
-
-  // console.log("Viewport Height:", viewportHeight);
-  //
-  // Education
-  // Environment
-  // TribalCommunities
   return (
     <div>
-      <Carousel>
+      <Carousel interval={1600}>
         <Carousel.Item>
           <div
             className="slide"

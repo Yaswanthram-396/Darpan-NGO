@@ -33,11 +33,20 @@
     display: flex !important;
     flex-direction: column;
     gap: 10px;
-    width: 76% !important;
+    width: 82% !important;
     padding: 10px;
     border-radius: 10px;
     color: #fff;
     background-color: #000;
+    font-size: 12px;
+    height: 490px;
+    @media (max-width:600px) {
+        height: 432px;
+        
+    }
+}
+.Fidelis-Phoebe p {
+    margin: 0px;
 }
 .cardsAsTestimonials p,.cardsAsTestimonials h2{
     margin: 10px;
@@ -326,7 +335,7 @@
   }
   .innerContainer {
     width: 100% !important;
-    max-width: 976px;
+    max-width: 1166px;
     margin: 0 auto; /* Centers the container */
   
     /* For screens between 601px and 901px */

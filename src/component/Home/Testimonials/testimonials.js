@@ -6,29 +6,50 @@ import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialsArray = [
   {
-    name: "Fidelis Phoebe",
-    role: "MD & CEO",
-    about: "Lorem ipsum dolor sit amet consectetur Eu aliquet ultrices nunc.",
+    name: "Ch. Vinay Kumar",
+    role: "Founder",
+    about:
+      "Ch. Vinay Kumar, founder of Jana Raksha Charitable Trust, is a dedicated leader in community service, driving the trust's impactful work in society.",
     class: "Fidelis-Phoebe",
   },
   {
-    name: "Fidelis Phoebe",
-    role: "MD & CEO",
-    about: "Lorem ipsum dolor sit amet consectetur Eu aliquet ultrices nunc.",
+    name: "M. Hema Sri Lakshmi",
+    role: "Secretary",
+    about:
+      "M. Hema Sri Lakshmi, the trust's Secretary, is admired for her leadership and strategic vision, driving the trust’s initiatives effectively.",
     class: "Fidelis-Phoebe",
   },
   {
-    name: "Fidelis Phoebe",
-    role: "MD & CEO",
-    about: "Lorem ipsum dolor sit amet consectetur Eu aliquet ultrices nunc.",
+    name: "S. Suresh",
+    role: "Joint Secretary",
+    about:
+      "S. Suresh, as Joint Secretary, is a dedicated and proactive team member, crucial to the smooth execution of the trust's programs.",
+    class: "Fidelis-Phoebe",
+  },
+
+  {
+    name: "P. Varalakshmi",
+    role: "Trustees",
+    about:
+      "As a key board member, P. Varalakshmi provides valuable insight and dedication, helping to shape the trust's strategic direction.",
     class: "Fidelis-Phoebe",
   },
   {
-    name: "Fidelis Phoebe",
-    role: "MD & CEO",
-    about: "Lorem ipsum dolor sit amet consectetur Eu aliquet ultrices nunc.",
+    name: "K. Bindu Chandrika",
+    role: "Trustees",
+    about:
+      "K. Bindu Chandrika’s active involvement is key to the success of the trust’s community projects, contributing significantly to its goals.",
+
     class: "Fidelis-Phoebe",
   },
+  {
+    name: "S.Sunitha",
+    role: "Trustees",
+    about:
+      "Sunitha is a trusted and essential part of the board of trustees. She supports the trust’s vision and mission, adding her enthusiasm and compassion to every initiative.",
+    class: "Fidelis-Phoebe",
+  },
+
   // Add more testimonials as needed
 ];
 
@@ -107,10 +128,11 @@ function Testimonials() {
                 key={index}
               >
                 <img
-                  src="Rectangle 411.png"
+                  src="Logo_PNG.png"
+                  // style={{ }}
                   alt={`Reload, ${eachPerson.name}!`}
                 />
-                <h2>{eachPerson.name}</h2>
+                <h3>{eachPerson.name}</h3>
                 <p>{eachPerson.role}</p>
                 <p>{eachPerson.about}</p>
               </div>
