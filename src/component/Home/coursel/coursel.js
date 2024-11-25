@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function CarouselPage() {
   return (
-    <div>
+    <div id="carousel">
       <Carousel interval={1600}>
         <Carousel.Item>
           <div

@@ -1,9 +1,11 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-button{
-transform: scale(1);
+.App {
+  font-family: poppins;
+}
+
+button {
+  transform: scale(1);
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -12,7 +14,100 @@ button:hover {
   background-color: #f7e5d7;
   border: 1px solid #000000;
   transform: scale(1.1);
-  color: #000;}
-  .App{
-font-family: poppins;
+  color: #000;
+}
+
+.blood-donation-container {
+  position: fixed;
+  bottom: 56%;
+  right: 8px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bloodDonation {
+  width: 0;
+  height: 0;
+  border-radius: 100px;
+  background-color: #ce7c02;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Remove the space between .bloodDonation and :hover */
+.bloodDonation:hover {
+  border-radius: 0 5px 5px 0;
+}
+
+/* Add this to maintain border-radius transition */
+.bloodDonation.show {
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  pointer-events: all;
+  @media (max-width:600px) {
+    width: 40px;
+    height: 40px;
   }
+  /* Add border-radius to transition property */
+  transition: all 0.3s ease-in-out, border-radius 0.2s ease-in-out;
+}
+
+.tooltip {
+  background-color: #ce7c02;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px 0 0 5px;
+  position: absolute;
+  right: 60px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(18px);
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+  width: max-content;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 600px) {
+    height: 40px;
+    
+  }
+}
+
+.tooltip.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(10px);
+  @media (max-width: 600px) {
+  transform: translateX(20px);
+    
+  }
+}
+
+.tooltip p {
+  
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0px;
+  @media (max-width:600px) {
+    font-size: 14px;
+  }
+}
+
+/* Rest of your existing CSS remains the same */
+.bloodDonation img{
+  width: 28px;
+} 
