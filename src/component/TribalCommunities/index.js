@@ -136,13 +136,13 @@ function TribalPage() {
       >
         <div className="impactOnOtherCards">
           <ImpactOfHandF
-            heading={" 800 Students Empowered in 1 Month"}
-            heading1={"1,200 Learners Supported in 1 Month"}
+            heading={"500 Tribal Families Empowered with Resources"}
+            heading1={"300 Youth Engaged in Skill Development"}
             paragraph={
-              "Through digital literacy programs, enabling access to online educational resources and skill development platforms."
+              "Implemented programs to provide access to basic necessities like food, healthcare, and education for tribal families."
             }
             paragraph1={
-              "Focused on rural education, distributing learning materials and organizing virtual classes for underserved areas."
+              "Organized skill-building workshops tailored to tribal youth, promoting self-reliance and economic opportunities."
             }
             image={"Edit Square.svg"}
             image1={"topRight.svg"}
@@ -150,13 +150,13 @@ function TribalPage() {
         </div>
         <div className="impactOnOtherCards">
           <ImpactOfHandF
-            heading={" 800 Students Empowered in 1 Month"}
-            heading1={"1,200 Learners Supported in 1 Month"}
+            heading={"200 Tribal Villages Supported"}
+            heading1={"1,000 Individuals Benefited"}
             paragraph={
-              "Through digital literacy programs, enabling access to online educational resources and skill development platforms."
+              "Focused on infrastructure development, including building schools, healthcare centers, and sanitation facilities in tribal areas."
             }
             paragraph1={
-              "Focused on rural education, distributing learning materials and organizing virtual classes for underserved areas."
+              "Launched initiatives to preserve tribal culture while integrating modern education and healthcare."
             }
             image={"bootomLeft.svg"}
             image1={"bootomRight.svg"}

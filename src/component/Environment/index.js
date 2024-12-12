@@ -172,7 +172,7 @@ function Environment() {
             paragraph1={
               "Raising awareness on water conservation techniques and reducing carbon footprints through energy-saving measures."
             }
-            image={"Edit Square.svg"}
+            image={"bootomLeft.svg"}
             image1={"bootomRight.svg"}
           />
         </div>

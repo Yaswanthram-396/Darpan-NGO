@@ -247,7 +247,7 @@ function HealthAndfamily() {
         >
           <div className="impactOnOtherCards">
             <ImpactOfHandF
-              heading={" 800 Students Empowered in 1 Month"}
+              heading={"800 Students Empowered in 1 Month"}
               heading1={"1,200 Learners Supported in 1 Month"}
               paragraph={
                 "Through digital literacy programs, enabling access to online educational resources and skill development platforms."
@@ -261,13 +261,13 @@ function HealthAndfamily() {
           </div>
           <div className="impactOnOtherCards">
             <ImpactOfHandF
-              heading={" 800 Students Empowered in 1 Month"}
-              heading1={"1,200 Learners Supported in 1 Month"}
+              heading={"500 Women Empowered through Skill Training"}
+              heading1={"300 Youth Guided into Employment"}
               paragraph={
-                "Through digital literacy programs, enabling access to online educational resources and skill development platforms."
+                "Focused on women's empowerment by providing skill-based training programs, fostering independence and economic growth."
               }
               paragraph1={
-                "Focused on rural education, distributing learning materials and organizing virtual classes for underserved areas."
+                "Conducted career counseling and job placement drives to connect unemployed youth with potential opportunities."
               }
               image={"bootomLeft.svg"}
               image1={"bootomRight.svg"}
